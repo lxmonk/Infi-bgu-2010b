@@ -1,0 +1,2162 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine jurabib
+\use_bibtopic false
+\paperorientation portrait
+\topmargin 2cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+חדו"א
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+א
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subject
+אוניברסיטת בן-גוריון, סמסטר ב'
+\family roman
+\series medium
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2010
+\family roman
+\series medium
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מרצה: ד"ר אפרים גורביץ'
+\end_layout
+
+\begin_layout Author
+רשם: אביעד רייך
+\end_layout
+
+\begin_layout Publishers
+לתיקונים והצעות:
+\family roman
+\series medium
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family sans
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+reichavi@bgu.ac.il
+\lang hebrew
+
+\begin_inset Newline newline
+\end_inset
+
+עותק עדכני:
+\lang english
+ http://github.com/lxmonk/Infi-bgu-2010b.git 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a+aq+aq^{2}+aq^{3}+\ldots=\frac{a}{1-q}\quad\left|q\right|<1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(1+x\right)^{n}=\Sigma_{k=0}^{n}\left(_{k}^{n}\right)x^{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+סדרות
+\end_layout
+
+\begin_layout Chapter
+גבול של סדרה
+\end_layout
+
+\begin_layout Section
+המספרים הממשיים
+\end_layout
+
+\begin_layout Subsection
+
+\numeric on
+14
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תכונות המספרים הרציונליים
+\end_layout
+
+\begin_layout Itemize
+חיבור
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a+b=b+a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a+0=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a+\left(-a\right)=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+כפל
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\cdot b=b\cdot a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(a\cdot b\right)\cdot c=a\cdot\left(b\cdot c\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\cdot1=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\neq0\quad,a\cdot\left(\frac{1}{a}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $<$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b,\, b<a,\, b=a$
+\end_inset
+
+ -- אחד מהשלושה תמיד יתקיים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a<b,\, b<c\Rightarrow a<c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\cdot\left(b+c\right)=a\cdot b+a\cdot c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a>b\Rightarrow a+c>b+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a>b,\, c>0\Rightarrow a\cdot c>b\cdot c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+)אקסיומת ארכימדס( 
+\begin_inset Formula $a\in\mathbb{N},\, r>0,\, r\in\mathbb{Q}\Rightarrow\frac{1}{n}<r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+עקרון ההתלכדות
+\end_layout
+
+\begin_layout Standard
+אם נתונים שני מספרים 
+\begin_inset Formula $a,\, b$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ וידוע שההפרש 
+\begin_inset Formula $\left|a-b\right|$
+\end_inset
+
+ קטן מכל מס' חיובי 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, אז מכאן 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הוכחה נניח שזה לא כך.
+ כלומר: 
+\begin_inset Formula $b>a$
+\end_inset
+
+ מכאן, קיים 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ כזה שעבורו 
+\begin_inset Formula $b-a>\varepsilon$
+\end_inset
+
+.
+ )!?( 
+\emph on
+סתירה.
+\end_layout
+
+\begin_layout Chapter
+התכנסות
+\end_layout
+
+\begin_layout Description
+הגדרה מספר ממשי 
+\begin_inset Formula $A$
+\end_inset
+
+ יקרא גבול של סדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+קיים 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $\left|a_{n}-A\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\lim a_{n}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}\rightarrow A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset Formula $C,C,C,C,\ldots,C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\lim C=C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $a_{n}=\frac{1}{n}\Rightarrow\lim_{x\rightarrow\infty}\frac{1}{n}=0\Rightarrow\left|\frac{1}{n}-0\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן בסדרה 
+\begin_inset Formula $a_{n}=\left(-1\right)^{n}$
+\end_inset
+
+: היא אינה מתכנסת.
+ כלומר: לא קיים C עבורו מתקיים
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula $\left|\left(-1\right)^{n}-C\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן בסדרה 
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+: היא אינה מתכנסת.
+ כלומר: לא קיים C עבורו מתקיים 
+\begin_inset Formula $\left|n-C\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט אם סדרה מתכנסת, אז היא חסומה.
+\end_layout
+
+\begin_layout Description
+משפט אם סדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מתכנסת, אז כל תת-סדרה של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מתכנסות.
+\end_layout
+
+\begin_layout Description
+משפט אם סדרה מונוטונית וחסומה היא בהכרח מתכנסת.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $a_{n}\rightarrow A,\: b_{n}\rightarrow B\,\Rightarrow\, a_{n}\pm b_{n}=A\pm B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $a_{n}\rightarrow A,\: b_{n}\rightarrow B\,\Rightarrow\, a_{n}\cdot b_{n}=A\cdot B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $a_{n}\rightarrow A,\: b_{n}\rightarrow B,B\neq0\,\Rightarrow\,\frac{a_{n}}{b_{n}}=\frac{A}{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט
+\begin_inset space ~
+\end_inset
+
+שני
+\begin_inset space ~
+\end_inset
+
+השוטרים 
+\begin_inset Formula $a_{n}\leq C_{n}\leq b_{n},\,\lim a_{n}=\lim b_{n}=A\Rightarrow\lim C_{n}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סדרות אפסיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+ נקראת סדרה אפסית
+\end_layout
+
+\begin_layout Description
+שים
+\begin_inset space ~
+\end_inset
+
+לב: 
+\begin_inset Formula \[
+a_{n}=\frac{1}{n}\rightarrow0,\, b_{n}=\frac{2}{n}\rightarrow0\Rightarrow\frac{a_{n}}{b_{n}}=\frac{\frac{1}{n}}{\frac{2}{n}}=\frac{1\cdot n}{2\cdot n}=\frac{1}{2}\neq0\,\left(\nicefrac{0}{0}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{n}=\frac{1}{n^{2}},b_{n}=\frac{2}{n}\Rightarrow\frac{c_{n}}{b_{n}}=\frac{1\cdot n}{2\cdot n^{2}}=\frac{1}{2\cdot n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסדרה 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ שואפת לאפס 
+\series bold
+מהר יותר
+\series default
+ מהסדרה 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+סדרה השואפת לאפס "מהר יותר"
+\end_layout
+
+\begin_layout Description
+הגדרה נאמר ש
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ שואפת לאפס מהר יותר מ
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ אם מתקיים 
+\begin_inset Formula ${\displaystyle \frac{a_{n}}{b_{n}}\rightarrow0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט מכפלה של סדרה חסומה בסדרה אפסית היא סדרה אפסית.
+ יהיו 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ סדרה אפסית, ו 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ סדרה חסומה.
+ אזי: 
+\begin_inset Formula $0\leq\left|c_{n}\cdot a_{n}\right|=\left|c_{n}\right|\cdot\left|a_{n}\right|\leq M\cdot\left|a_{n}\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמאות חישוב של גבולות אחדים
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+\lim_{n\rightarrow\infty}\left(\frac{1}{n},\frac{-1}{n},\frac{\left(-1\right)^{n}}{n},\frac{1+\left(-1\right)^{n}}{n}\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1+\left(-1\right)^{n}}{n}\,:\,0,\,\frac{2}{2},\,0,\,\frac{2}{4},\,\ldots$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \[
+a_{n}=\frac{n^{2}+5n-2}{3n^{2}-4n+1}=\frac{\not n^{2}\left(1+\frac{5}{n}-\frac{2}{n^{2}}\right)}{\not n^{2}\left(3-\frac{4}{n}-\frac{1}{n^{2}}\right)}\rightarrow\frac{1}{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $P$
+\end_inset
+
+ פולינום ממעלה 
+\begin_inset Formula $m$
+\end_inset
+
+ ו
+\begin_inset Formula $Q$
+\end_inset
+
+ פולינום ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אזי:
+\begin_inset Formula \[
+a_{n}=\frac{P_{m}}{Q_{n}}\rightarrow\begin{cases}
+0 & m<n\\
+\frac{\alpha}{\beta} & m=n\\
+No\, limit & m>n\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\left(\sqrt{n+1}-\sqrt{n}\right)=\lim\left(\frac{\left(\sqrt{n+1}-\sqrt{n}\right)\cdot\left(\sqrt{n+1}+\sqrt{n}\right)}{\left(\sqrt{n+1}+\sqrt{n}\right)}\right)=\lim\left(\frac{1}{\left(\sqrt{n+1}+\sqrt{n}\right)}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\lim\sqrt{n}\cdot\left(\sqrt{n+1}-\sqrt{n}\right) & = & \lim\left(\frac{\sqrt{n}\cdot\left(\sqrt{n+1}-\sqrt{n}\right)\cdot\left(\sqrt{n+1}+\sqrt{n}\right)}{\left(\sqrt{n+1}+\sqrt{n}\right)}\right)=\\
+ &  & \lim\left(\frac{\sqrt{n}}{\left(\sqrt{n+1}+\sqrt{n}\right)}\right)=\\
+ &  & \lim\frac{1}{\sqrt{1+\frac{1}{n}}+1}=\nicefrac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim\left(\frac{A\cos n+B\sin n}{\sqrt{n}}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\bar under
+אי-שיוויון ברנולי
+\series default
+\bar default
+
+\begin_inset Formula \[
+\left(1+x\right)^{n}=1+nx+\frac{n\left(n+1\right)}{2!}x^{2}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}x^{3}+\ldots+\frac{n\left(n+1\right)\left(n+2\right)\ldots2\cdot1}{n!}x^{n}>1+nx\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט אם 
+\begin_inset Formula $a>1$
+\end_inset
+
+, אז 
+\begin_inset Formula $\lim\sqrt[n]{a}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה 
+\begin_inset Formula $\sqrt[n]{a}-1=t>0\Rightarrow\sqrt[n]{a}=1+t\Rightarrow a=\left(1+t\right)^{n}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+וכעת, ע"פ אי-שיוון ברנולי נקבל
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $\left(1+t\right)^{n}>1+nt\Rightarrow a>1+n\left(\sqrt[n]{a}-1\right)\Rightarrow0<\sqrt[n]{a}-1<\frac{a-1}{n}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+שני צידי המשוואה )
+\numeric on
+
+\begin_inset Formula $0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו 
+\begin_inset Formula $\frac{a-1}{n}$
+\end_inset
+
+( שואפים לאפס, ולכן ע"פ חוק הסנדוויץ', 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\sqrt[n]{a}-1\rightarrow0\Rightarrow\sqrt[n]{a}\rightarrow1$
+\end_inset
+
+ מש"ל.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{n}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה 
+\begin_inset Formula $\sqrt[n]{n}-1=x,\,\left(x>0\right)\,\Rightarrow\sqrt[n]{n}=1+x\Rightarrow n=\left(1+x\right)^{n}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ושוב, נשתמש באי-שיוויון ברנולי )במהדורה מורחבת( 
+\begin_inset Formula \[
+n=\left(1+x\right)^{n}>1+nx+\underline{\frac{n\left(n-1\right)}{2}x^{2}}>1+nx+\underline{\frac{n^{2}}{4}x^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדבר אפשרי משום ש 
+\begin_inset Formula $\frac{n\left(n-1\right)}{2}>\frac{n^{2}}{4}$
+\end_inset
+
+ 
+\begin_inset Formula \begin{eqnarray*}
+n & > & 1+nx+\frac{n^{2}}{4}x^{2}=\left(1+\frac{nx}{2}\right)^{2}\Rightarrow\left(1+\frac{nx}{2}\right)^{2}<n\Rightarrow\\
+ &  & \sqrt{\left(1+\frac{nx}{2}\right)^{2}}<\sqrt{n}\Rightarrow\left|1+\frac{nx}{2}\right|<\sqrt{n}\Rightarrow\\
+ &  & \left(-\sqrt{n}\right)<1+\frac{nx}{2}<\sqrt{n}\Rightarrow-\sqrt{n}-1<\frac{nx}{2}<\sqrt{n}-1\Rightarrow\\
+ &  & \frac{-2\sqrt{n}-2}{n}<x<\frac{2\sqrt{n}-2}{n}\Rightarrow\\
+ &  & 0<x<0\Rightarrow\sqrt[n]{n}\rightarrow1\end{eqnarray*}
+
+\end_inset
+
+ מש"ל.
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\lim\frac{10^{n}}{n!}\rightarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+חישוב 
+\begin_inset Formula \[
+\frac{a_{n+1}}{a_{n}}=\frac{10^{n+1}n!}{\left(n+1\right)!10^{n}}=\frac{10}{n+1}\Rightarrow\]
+
+\end_inset
+
+ נזכור, כי כל סדרה מונוטונית וחסומה מתכנסת.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $a_{n+1}=a_{n}\cdot\left(\frac{10}{n+1}\right)\Rightarrow A=A\cdot0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט 
+\begin_inset Formula $\lim\frac{a^{n}}{n!}=0\,\left(a>0\right)$
+\end_inset
+
+ או למשל 
+\begin_inset Formula $\lim\frac{n^{a}}{b^{n}}=0,b>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה 
+\begin_inset Formula \[
+\frac{a_{n+1}}{a_{n}}=\frac{\left(n+1\right)^{10}\cdot10}{10^{n+1}n^{10}}=\frac{1}{10}\left(\frac{n+1}{n}\right)^{10}=\frac{1}{10}\left(1+\frac{1}{n}\right)^{10}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\lim a_{n+1}=\lim a_{n}\cdot\frac{1}{10}\left(1+\frac{1}{n}\right)^{10}\Rightarrow A-A\cdot\frac{1}{10}=0\Rightarrow A\cdot\frac{9}{10}=0\Rightarrow A=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+המספר
+\family sans
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $e$
+\end_inset
+
+
+\lang hebrew
+ )...
+\numeric on
+\lang english
+2
+\numeric off
+.
+\numeric on
+718281828459045
+\numeric off
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{n} & = & \left(1+\frac{1}{n}\right)^{n}=\\
+ &  & 1+1+\frac{n\left(n-1\right)}{2!}\cdot\frac{1}{n^{2}}+\frac{n\left(n-1\right)\left(n-2\right)}{3!}\cdot\frac{1}{n^{3}}+\ldots+\frac{n\left(n-1\right)\left(n-2\right)\ldots\left(n-k+1\right)}{k!}\cdot\frac{1}{n^{k}}+\ldots\\
+ &  & +\frac{n\left(n-1\right)\cdot\ldots\cdot2\cdot1}{n!}\cdot\frac{1}{n^{n}}=\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula \[
+x_{n+1}>x_{n}\]
+
+\end_inset
+
+ כלומר: מדובר בסדרה עולה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n}<2+\frac{1}{2!}+\frac{1}{3!}+\ldots+\frac{1}{n!}<2+\underbrace{\frac{1}{2}+\frac{1}{2^{2}}+\frac{1}{2^{3}}+\frac{1}{2^{4}}+\ldots+\frac{1}{2^{n-1}}}<2+\underbrace{1}<3\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר: הסדרה חסומה )גם( ע"י המספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e=\lim\left(1+\frac{1}{n}\right)^{n}=\lim\left(1+\frac{1}{2!}+\frac{1}{3!}+\ldots+\frac{1}{n!}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\log_{e}x\equiv\ln x$
+\end_inset
+
+
+\series bold
+\lang english
+l
+\series default
+ogarithmus 
+\series bold
+n
+\series default
+aturalis 
+\begin_inset Formula $\longleftrightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\log_{c}x=\frac{\log_{b}x}{\log_{b}c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+גבולות הקשורים למספר
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim\left(1+\frac{1}{n}\right)^{n}=e\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim\left(1+\frac{2}{n}\right)^{n}=\left[n=2k\right]=\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{2k}=\lim_{k\rightarrow\infty}\left[\left(1+\frac{1}{k}\right)^{k}\right]^{2}=e^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובאופן כללי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{n\rightarrow\infty}\left(1+\frac{a}{n}\right)^{n}=e^{a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אירציונליות 
+\begin_inset Formula $e$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נוכיח שהמספר 
+\begin_inset Formula $e$
+\end_inset
+
+ אירציונלי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y_{n} & = & \lim\left(1+\frac{1}{2!}+\frac{1}{3!}+\ldots+\frac{1}{n!}\right)\Rightarrow\\
+y_{n+m}-y_{n} & = & \frac{1}{\left(n+1\right)!}+\frac{1}{\left(n+2\right)!}+\ldots+\frac{1}{\left(n+m\right)!}=\\
+ &  & \frac{1}{\left(n+1\right)!}\left[1+\frac{1}{\left(n+2\right)}+\frac{1}{\left(n+2\right)\left(n+3\right)}+\ldots+\frac{1}{\left(n+2\right)\left(n+3\right)\ldots\left(n+m\right)}\right]\\
+ & < & e=\lim\left(1+\frac{1}{n}\right)^{n}\\
+ & < & \frac{1}{\left(n+1\right)!}\left[1+\frac{1}{\left(n+2\right)}+\frac{1}{\left(n+2\right)^{2}}+\ldots+\frac{1}{\left(n+2\right)^{m-1}}\right]=\frac{1}{\left(n+1\right)!}\cdot\frac{1}{1-\frac{1}{n-2}}=\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המעבר האחרון על פי סכום סדרה הנדסית אינסופית 
+\begin_inset Formula $1+q+q^{2}+\ldots=\frac{1}{1-q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n+2}{\left(n+1\right)!\left(n+1\right)}<\frac{1}{n!n}$
+\end_inset
+
+ ניתן לבדוק ולהגיע לסתירה אם ההנחה ההפוכה, ולכן אי השיוויון נכון.
+\end_layout
+
+\begin_layout Standard
+קיבלנו: 
+\begin_inset Formula $y_{n+m}-y_{n}<\frac{1}{n!n}$
+\end_inset
+
+.
+ מכאן, נעבור לגבול כאשר 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+: 
+\begin_inset Formula $\lim_{m\rightarrow\infty}\left(y_{n+m}-y_{n}\right)\leq\frac{1}{n!n}\Rightarrow e-y_{n}\leq\frac{1}{n!n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הצבנו את 
+\begin_inset Formula $e$
+\end_inset
+
+ במקום 
+\begin_inset Formula $y_{n+m}$
+\end_inset
+
+ משום שכך הוגדר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e-y_{n}=\frac{\theta}{n!n},\,0<\theta<1$
+\end_inset
+
+ בכדי להחליף את הסימן 
+\begin_inset Formula $\leq$
+\end_inset
+
+ בסימן השיוויון )=(, החלפנו את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ב 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e=y_{n}+\frac{\theta}{n!n}$
+\end_inset
+
+ מכאן, ברור כי 
+\begin_inset Formula $e$
+\end_inset
+
+ אירציונלי, משום שאם נניח כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+e
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+רציונלי נקבל סתירה:
+\end_layout
+
+\begin_layout Standard
+משום שהביטוי הנ"ל נכון עבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+, ובפרט עבור 
+\begin_inset Formula $n=q$
+\end_inset
+
+, נקבל: 
+\begin_inset Formula $e=1+\frac{1}{1!}+\ldots+\frac{1}{n!}+\frac{\theta}{n!n}\Rightarrow e=\frac{p}{q}\Rightarrow e=1+\frac{1}{1!}+\ldots+\frac{1}{q!}+\frac{\theta}{q!q}=\frac{p}{q}$
+\end_inset
+
+ אם נכפיל את שני האגפים ב
+\begin_inset Formula $q!$
+\end_inset
+
+ נקבל סתירה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{1}+\frac{\theta}{q}=n_{2}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n_{1},n_{2}$
+\end_inset
+
+ שלמים, ואילו 
+\begin_inset Formula $\frac{\theta}{q}$
+\end_inset
+
+ שבר.
+\end_layout
+
+\begin_layout Chapter
+סכום הרמוני ולוגריתמים טבעיים
+\end_layout
+
+\begin_layout Section
+למה 
+\begin_inset Formula $\frac{1}{n+1}<\ln\left(1+\frac{1}{n}\right)<\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(1+\frac{1}{n}\right)^{n}\nearrow e$
+\end_inset
+
+ הסדרה שואפת ל
+\begin_inset Formula $e$
+\end_inset
+
+ בעלייה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{n}=\left(1+\frac{1}{n}\right)^{n+1}\searrow e$
+\end_inset
+
+ הסדרה שואפת ל
+\begin_inset Formula $e$
+\end_inset
+
+ בירידה.
+ )למשל 
+\begin_inset Formula $y_{1}=4,\, y_{2}=3.375$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{y_{n}}{y_{n+1}} & = & \frac{\left(\frac{n+1}{n}\right)^{n+1}}{\left(\frac{n+2}{n+1}\right)^{n+2}}=\frac{\left(n+1\right)^{n+1}\left(n+1\right)^{n+2}}{\left(n+2\right)^{n+2}n^{n+1}}=\frac{n}{n+1}\frac{n+1}{n}\frac{\left(n+1\right)^{2n+3}}{n^{n+1}\left(n+2\right)^{n+2}}=\\
+ &  & \frac{n}{n+1}\frac{\left[\left(n+1\right)^{2}\right]^{n+2}}{n^{n+2}\left(n+2\right)^{n+2}}=\frac{n}{n+1}\left(\frac{n^{2}+2n+1}{n^{2}+2n}\right)^{n+2}=\\
+ &  & \frac{n}{n+1}\left(1+\frac{1}{n\left(n+2\right)}\right)^{n+2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת, ע"פ אי-שיוויון ברנולי 
+\begin_inset Formula $\left(1+\alpha\right)^{n}>1+\alpha n$
+\end_inset
+
+ נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n}{n+1}\left(1+\frac{1}{n\left(n+2\right)}\right)^{n+2}>\frac{n}{n+1}\left(1+\frac{1}{n}\right)=\frac{n}{n+1}\frac{n+1}{n}=1$
+\end_inset
+
+ 
+\series bold
+סיום ההוכחה חסר!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{n}=\ln n+C+\alpha_{n}$
+\end_inset
+
+ כאשר C קבוע, 
+\begin_inset Formula $\alpha_{n}\rightarrow0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{n}=1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}$
+\end_inset
+
+ הסדרה ההרמונית.
+\end_layout
+
+\begin_layout Standard
+נתבונן בסדרה 
+\begin_inset Formula $C_{n}=H_{n}-\ln n=1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}-\ln n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C_{n+1}-C_{n} & = & 1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}+\frac{1}{n+1}-\ln\left(n+1\right)-\left(1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}\right)+\ln n=\\
+ &  & \frac{1}{n+1}-\ln\frac{n+1}{n}=\frac{1}{n+1}-\ln\left(1+\frac{1}{n}\right)<0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C_{n} & = & H_{n}-\ln n=1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}-\ln n>\ln2+\ln\frac{3}{2}+\ln\frac{4}{3}+\ldots+\ln\frac{n+1}{n}-\ln n=\\
+ &  & \ln\frac{2\cdot3\cdot4\cdot\ldots\cdot\left(n+1\right)}{2\cdot3\cdot4\cdot\ldots\cdot n\cdot n}=\ln\frac{n+1}{n}=\ln\left(1+\frac{1}{n}\right)>0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\left(1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}-\ln n\right)=C\Rightarrow\lim C_{n}=C\Rightarrow C_{n}-C\rightarrow0\Rightarrow H_{n}-\ln n-C=\alpha_{n}\Rightarrow H_{n}=\ln n+C+\alpha_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=0.577\ldots$
+\end_inset
+
+ קבוע אוילר.
+ לא ידוע האם הוא רציונלי או אירציונלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}\thickapprox\ln n$
+\end_inset
+
+ הסכום ההרמוני שואף לאינסוף במהירות של הלוגריתם הטבעי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{1000}=7.48\ldots\qquad H_{1000000}=14.39\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+ביטויים בלתי מסוימים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}n=+\infty$
+\end_inset
+
+ חשוב! סדרה זו 
+\series bold
+\bar under
+לא מתכנסת
+\series default
+\bar default
+ )לא לאינסוף ולא לשום ערך אחר(.
+ הסדרה 
+\series bold
+שואפת
+\series default
+ )מתבדרת(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim b_{n}=-\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\frac{a_{n}}{b_{n}}=\frac{\infty}{\infty}$
+\end_inset
+
+ זה הוא ביטוי בלתי-מסוים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{\alpha_{n}}{\beta_{n}}=\left[\frac{0}{0}\right]=\ldots$
+\end_inset
+
+ גם זה ביטוי בתלי-מסוים.
+\end_layout
+
+\begin_layout Standard
+נוספים: 
+\begin_inset Formula $0\cdot\infty,\,\infty-\infty,\,1^{\infty},\,0^{0},\,\infty^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+גבולות חלקיים
+\end_layout
+
+\begin_layout Section
+דוגמאות לגבולות חלקיים
+\end_layout
+
+\begin_layout Standard
+לסדרה 
+\begin_inset Formula $a_{n}=\left(-1\right)^{n}$
+\end_inset
+
+ יש תת-סדרות מתכנסות )היא עצמה לא..(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1,1,1,1,1,1,1,\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-1,-1,-1,-1,-1\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם לסדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ קיימת תת-סדרה 
+\begin_inset Formula $a_{n_{k}}\rightarrow A$
+\end_inset
+
+ אזי A יקרא גבול חלקי של הסדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{k\rightarrow\infty}a_{n_{k}}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן בסדרה 
+\begin_inset Formula $x_{n}=\cos\frac{\pi n}{4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos\frac{\pi}{4},\cos\frac{\pi}{2},\cos\frac{3\pi}{4},\cos\pi\ldots=\frac{\sqrt{2}}{2},0,-\frac{\sqrt{2}}{2},-1,-\frac{\sqrt{2}}{2},0,\frac{\sqrt{2}}{2},1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חמשת הגבולות החלקיים )האפשריים( לסדרה זו הם: 
+\begin_inset Formula $\frac{\sqrt{2}}{2},0,-\frac{\sqrt{2}}{2},-1,1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+דוגמא נוספת )מעט יותר מורכבת(:
+\end_layout
+
+\begin_layout Standard
+נתבונן בסדרה 
+\begin_inset Formula $x_{\alpha\beta\ldots\gamma}=0\ldotp\alpha\beta\ldots\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{1}=0.1\qquad x_{2}=0.2\qquad x_{3}=0\ldotp3\qquad x_{14}=0.14$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש 
+\begin_inset Formula $x_{1}=x_{10}=x_{100}\ldots=0.1$
+\end_inset
+
+ ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא גבול חלקי.
+ אבל גם )למשל( 
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula $x_{358}=x_{3580}=0.358$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוא גבול חלקי.
+ למעשה, 
+\series bold
+כל מספר רציונלי ב 
+\begin_inset Formula $\left[0.1,1\right]$
+\end_inset
+
+ הוא גבול חלקי של הסדרה! 
+\series default
+אבל מכך נובע שגם כל מספר 
+\series bold
+אי-רציונלי ב 
+\begin_inset Formula $\left[0.1,1\right]$
+\end_inset
+
+ הוא גבול חלקי של הסדרה.
+\end_layout
+
+\begin_layout Subsection
+שתי סדרות
+\end_layout
+
+\begin_layout Standard
+נוכיח כי עבור שתי הסדרות 
+\begin_inset Formula $x_{n},\, y_{n}=x_{n}\sqrt[n]{n}$
+\end_inset
+
+ אם 
+\begin_inset Formula $x_{n}\rightarrow A$
+\end_inset
+
+ אז 
+\begin_inset Formula $y_{n}\rightarrow A$
+\end_inset
+
+.
+ אולם, 
+\end_layout
+
+\begin_layout Standard
+צ"ל: כל הגבולות החלקיים של שתי סדרות אלו הם אותם המספרים.
+\end_layout
+
+\begin_layout Description
+משפט לשתי סדרות אלו אותם גבולות חלקיים.
+\end_layout
+
+\begin_layout Description
+הוכחה נניח כי A הוא גבול חלקי של 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, צ"ל 
+\begin_inset Formula $y_{n}\rightarrow A$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\lim_{k\rightarrow\infty}x_{n_{k}}=A$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $y_{n_{k}}=x_{n_{k}}\cdot\sqrt[n_{k}]{n_{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזכור כי 
+\begin_inset Formula $\lim\sqrt[n]{n}\rightarrow1$
+\end_inset
+
+ ולכן, 
+\begin_inset Formula $\lim_{k\rightarrow\infty}y_{n_{k}}=A\cdot1=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת, יש להראות כי 
+\begin_inset Formula \[
+\lim_{k\rightarrow\infty}y_{n_{k}}=B\Rightarrow x_{n}=\frac{y_{n}}{\sqrt[n]{n}}\Rightarrow x_{n_{k}}=\frac{y_{n_{k}}}{\sqrt[n_{k}]{n_{k}}}\Rightarrow x_{n_{k}}\rightarrow\frac{B}{1}=B\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+סדרה חסומה ולא מתכנסת
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ חסומה - 
+\begin_inset Formula $\lim\left(x_{n+1}-x_{n}\right)=0$
+\end_inset
+
+.
+ האם הסדרה מתכנסת?
+\end_layout
+
+\begin_layout Standard
+תשובה: הסדרה לא תמיד מתכנסת.
+ יתכן כי היא מתבדרת.
+ למה? )לא הוכחה מלאה(
+\end_layout
+
+\begin_layout Standard
+די לתת דוגמא בכדי לסתור את הטענה:
+\end_layout
+
+\begin_layout Standard
+הסדרה 
+\begin_inset Formula $0,0.5,1,0.75,0.5,0.25,0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1\ldots$
+\end_inset
+
+ עונה על ההגדרה אבל אינה מתכנסת.
+\end_layout
+
+\begin_layout Section
+הלמה של בולצנו-ויירשטרס
+\end_layout
+
+\begin_layout Description
+משפט כל סדרה חסומה כוללת תת-סדרה מתכנסת )אחת לפחות(
+\end_layout
+
+\begin_layout Description
+הוכחה נתבונן בסדרה החסומה 
+\begin_inset Formula $x_{n}\in\left[a_{0},b_{0}\right]$
+\end_inset
+
+ צ"ל: קיימת תת-סדרה של 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ המתכנסת.
+ נוכיח בעזרת שיטת בולצנו )
+\lang english
+Bolzano
+\lang hebrew
+(:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתבונן בנקודה האמצעית בקטע הנתון.
+ לפחות אחת המחציות כוללת מספר אינסופי של איברים בסדרה.
+ נקרא לקטע הנבחר )מחצית הקטע הראשון( 
+\begin_inset Formula $\left[a_{1},b_{1}\right]$
+\end_inset
+
+.
+ שוב, נחלק את הקטע לשני חלקים באמצעו, ונקבל את הקטע 
+\begin_inset Formula $\left[a_{2},b_{2}\right]$
+\end_inset
+
+ שבו מספר אינסופי של איברים.
+ נמשיך כך מספר אינסופי של פעמים.
+ נקבל כי 
+\begin_inset Formula $\left[a_{0},b_{0}\right]\supset\left[a_{1},b_{1}\right]\supset\left[a_{1},b_{1}\right]\supset\ldots$
+\end_inset
+
+ ואז נקבל כי 
+\begin_inset Formula $b_{n}-a_{n}=\frac{b_{0}-a_{0}}{2^{n}}$
+\end_inset
+
+.
+ על פי הלמה של קנטור, קיימת נקודה 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ המשותפת לכל הקטעים.
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $x_{n_{1}}$
+\end_inset
+
+ השייך לקטע 
+\begin_inset Formula $\left[a_{1},b_{1}\right]$
+\end_inset
+
+, ולאחריו 
+\begin_inset Formula $x_{n_{2}}$
+\end_inset
+
+ השייך לקטע 
+\begin_inset Formula $\left[a_{2},b_{2}\right]$
+\end_inset
+
+ וכך הלאה.
+ משום שבקטעים שבחרנו תמיד ימצאו אינסוף איברים, תמיד נוכל לבנות סדרה אינסופית
+ השואפת לנקודה/מספר 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ המורכבת מאיברים שונים של הסדרה המקורית.
+ באופן כללי נאמר, 
+\begin_inset Formula $x_{n_{k}}\in\left[a_{n_{k}},b_{n_{k}}\right]\rightarrow\left[c_{0},c_{0}\right]$
+\end_inset
+
+ ולפי משפט הסנדוויץ', נקבל 
+\begin_inset Formula $x_{n_{k}}\rightarrow c_{0}$
+\end_inset
+
+.
+ מש"ל.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הערה אם הסדרה המקורית לא חסומה, לא בהכרח ניתן לבחור את הקטע הראשון, ולכן
+ לא ניתן להשתמש בשיטה ועל כן נאמר כי הסדרה שואפת ל 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+קבוצת כל הגבולות החלקיים
+\end_layout
+
+\begin_layout Standard
+נסמן באות 
+\begin_inset Formula $X$
+\end_inset
+
+ את קבוצת כל הגבולות החלקיים.
+ האם קיים גבול חלקי מקסימלי ומינימלי?
+\end_layout
+
+\begin_layout Standard
+גבולות אלו יקראו הגבול העליון והגבול התחתון.
+ 
+\end_layout
+
+\begin_layout Standard
+נסמן: 
+\begin_inset Formula $\underline{\lim}x_{n}$
+\end_inset
+
+ לגבול התחתון, ו 
+\begin_inset Formula $\overline{\text{\lim}}x_{n}$
+\end_inset
+
+ לגבול העליון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+לא כוללת נקודות בודדות.
+ בכל קבוצה חסומה קיימים הסופרמום והאינפימום: 
+\begin_inset Formula $supX,\, infX$
+\end_inset
+
+ שגם הם גבולות חלקיים של הסדרה.
+ הסופרמום הוא הגבול המקסימלי.
+\end_layout
+
+\begin_layout Standard
+כלומר: ב 
+\begin_inset Formula $X$
+\end_inset
+
+ תמיד ימצא איבר מקסימלי ואיבר מקסימלי.
+\end_layout
+
+\begin_layout Standard
+אם הסדרה 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ חסומה, אזי 
+\begin_inset Formula $\overline{\text{\lim}}x_{n}=\sup x_{n}$
+\end_inset
+
+, ו 
+\begin_inset Formula $\underline{\lim}x_{n}=\inf x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם הסדרה 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ לא חסומה, 
+\begin_inset Formula $\overline{\text{\lim}}x_{n}=\infty$
+\end_inset
+
+, ו 
+\begin_inset Formula $\underline{\lim}x_{n}=-\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+קריטריון ההתכנסות
+\end_layout
+
+\begin_layout Standard
+נשוב ונעסוק בסדרות מתכנסות.
+ כלומר: 
+\begin_inset Formula $x_{n}\rightarrow A$
+\end_inset
+
+.
+ מכאן, לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|x_{n}-A\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+קריטריון קושי
+\end_layout
+
+\begin_layout Standard
+קושי היה הראשון לקבוע את "קריטריון קושי" המאפשר לנו להיפטר מ
+\begin_inset Formula $A$
+\end_inset
+
+ בהגדרה, ועדיין לברר האם קיים גבול לסדרה אם לאו.
+\end_layout
+
+\begin_layout Description
+המשפט נתונה סדרה 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+.
+ סדרה זו מתכנסת אם"ם עבור כל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים מספר 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ כך שקיימים שני מספרים 
+\begin_inset Formula $n,n'>N$
+\end_inset
+
+ עבורם 
+\begin_inset Formula $\left|x_{n}-x_{n'}\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה נניח 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ מתכנסת.
+ מכאן, 
+\begin_inset Formula $\left|x_{n}-A\right|<\epsilon$
+\end_inset
+
+, ובדומה, 
+\begin_inset Formula $\left|x_{n'}-A\right|<\epsilon$
+\end_inset
+
+.
+ כעת, נרצה לחשב את 
+\begin_inset Formula $\left|x_{n}-x_{n'}\right|$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|x_{n}-x_{n'}\right|=\left|x_{n}-x_{n'}-A+A\right|=\left|\left(x_{n}-A\right)+\left(A-x_{n'}\right)\right|\leq2\cdot\epsilon$
+\end_inset
+
+.
+ המעבר האחרון על פי אי-שיוויון המשולש.
+\end_layout
+
+\begin_layout Standard
+כעת, נוכיח את הכיוון ההפוך: נניח שעבור כל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N$
+\end_inset
+
+: 
+\begin_inset Formula $\left|x_{n}-x_{n'}\right|<\epsilon\Leftarrow n,n'>N$
+\end_inset
+
+.
+ מכאן, 
+\begin_inset Formula $x_{n'}-\epsilon<x_{n}<x_{n'}+\epsilon$
+\end_inset
+
+.
+ מסקנה: 
+\begin_inset Formula $\overline{\lim}x_{n}=\underline{\lim}x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part
+טורים מספריים
+\end_layout
+
+\begin_layout Standard
+טור הוא סכום של סדרה אינסופית.
+\end_layout
+
+\begin_layout Chapter
+התכנסות והתבדרות
+\end_layout
+
+\end_body
+\end_document
