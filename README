@@ -1,0 +1,20 @@
+In order to download the document:
+
+1. Install git (http://book.git-scm.com/2_installing_git.html), and
+do:
+$ git clone git://github.com/lxmonk/Infi-bgu-2010b.git
+
+OR
+
+2. Press the Download Source button.
+Choose you favorite compression protocol.
+Decompress.
+
+(the git option is recommended since the file will be updated
+on a weekly basis, and it makes downloading easier)
+
+Any corrections and suggestions will be valued. Please send them
+to reichavi@bgu.ac.il or avi.rei@gmail.com
+
+Good luck,
+Aviad
