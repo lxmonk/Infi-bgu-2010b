@@ -1,6 +1,6 @@
 In order to download the document:
 
-1. Install git (for example according to 
+1. Install git according to (for example)
 http://book.git-scm.com/2_installing_git.html, 
 and do:
 $ git clone git://github.com/lxmonk/Infi-bgu-2010b.git
