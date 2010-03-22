@@ -2150,12 +2150,298 @@ Bolzano
 טורים מספריים
 \end_layout
 
+\begin_layout Chapter
+התכנסות והתבדרות
+\end_layout
+
 \begin_layout Standard
 טור הוא סכום של סדרה אינסופית.
 \end_layout
 
-\begin_layout Chapter
-התכנסות והתבדרות
+\begin_layout Standard
+תהי סדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ אזי סכום 
+\begin_inset Formula $j$
+\end_inset
+
+ האיברים הראשונים, נקרא 
+\begin_inset Formula $S_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\left(A\right)\,\Sigma a_{k},\,\left(B\right)\,\Sigma b_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט אם הטור 
+\begin_inset Formula $B$
+\end_inset
+
+ מתכנס, ואיברי 
+\begin_inset Formula $A$
+\end_inset
+
+ לא עולים על איברי 
+\begin_inset Formula $B$
+\end_inset
+
+, אזי גם 
+\begin_inset Formula $A$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Description
+משפט אם 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n}}{b_{n}}=k,\,0<k<\infty$
+\end_inset
+
+ אז 
+\begin_inset Formula $A$
+\end_inset
+
+ ו 
+\begin_inset Formula $B$
+\end_inset
+
+ מתכנסים או מתבדרים ביחד.
+\end_layout
+
+\begin_layout Description
+הוכחה 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ מתכנס 
+\begin_inset Formula $\left(A\right)\Leftarrow a_{n}<k_{1}b_{n}\Leftarrow\frac{a_{n}}{b_{n}}<k_{1}\Leftarrow\frac{a_{n}}{b_{n}}\rightarrow k$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ מתבדר 
+\begin_inset Formula $\left(A\right)\Leftarrow a_{n}<k_{2}b_{n}\Leftarrow\frac{a_{n}}{b_{n}}>k_{2}\Leftarrow\frac{a_{n}}{b_{n}}\rightarrow k$
+\end_inset
+
+ מתבדר.
+\end_layout
+
+\begin_layout Standard
+נתבונן דוגמא הבאה: 
+\begin_inset Formula $\Sigma\frac{1}{\sqrt{n\left(n+1\right)}}$
+\end_inset
+
+, ונראה שמתקיים
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $\Sigma\frac{1}{\sqrt{n\left(n+1\right)}}>\Sigma\frac{1}{\sqrt{\left(n+1\right)^{2}}}=\Sigma\frac{1}{n+1}$
+\end_inset
+
+ קיבלנו טור הרמוני, שידוע שאינו מתכנס.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת: 
+\begin_inset Formula $\Sigma\frac{1}{n\sqrt[n]{n}}$
+\end_inset
+
+.
+ נתבונן בטור ההשוואה ההרמוני 
+\begin_inset Formula $\Sigma\frac{1}{n}$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\frac{1n}{n\sqrt[n]{n}}=\frac{1}{\sqrt[n]{n}}\rightarrow1$
+\end_inset
+
+ ולכן הטור מתכנס.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma\frac{n!^{2}}{\left(2n\right)!}=\frac{n!n!}{1\cdot2\cdot3\cdot4\cdot\ldots\cdot2n}=\frac{n!n!}{2\cdot4\cdot6\cdot\ldots n\cdot1\cdot3\cdot5\cdot7\cdot\left(2n-1\right)}=\frac{n!n!}{2^{n}\left(n!\right)\cdot1\cdot3\cdot5\cdot7\cdot\left(2n-1\right)}=\frac{1\cdot2\cdot3\cdot\ldots\cdot n}{2^{n}\cdot1\cdot3\cdot5\cdot\ldots\cdot\left(2n-1\right)}=\frac{2}{3}\cdot\frac{3}{5}\cdot\frac{4}{7}\cdot\frac{5}{8}\cdot\frac{6}{9}\cdot\frac{1}{2^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מבחן קושי לטורים חיוביים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma a_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $C_{n}=\sqrt[n]{a_{n}}$
+\end_inset
+
+ אם 
+\begin_inset Formula $C_{n}\leq q<1$
+\end_inset
+
+ אז הטור מתכנס.
+ אם 
+\begin_inset Formula $C_{n}\geq1$
+\end_inset
+
+ אז הטור מתבדר.
+ לרוב נעשה שימוש בגרסא חלשה: 
+\begin_inset Formula $\lim C_{n}=q<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\begin_inset Formula $\sqrt[n]{a_{n}}\leq q<1\Rightarrow a_{n}\leq q^{n}<1\Rightarrow a_{n}\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמא לשימוש: 
+\begin_inset Formula $\Sigma\frac{1}{\left(\ln n\right)^{n}}\Rightarrow C_{n}=\frac{1}{\ln n}\Rightarrow\lim C_{n}=0<1$
+\end_inset
+
+ הטור מתכנס.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת: 
+\begin_inset Formula $\Sigma q^{n}\Rightarrow\lim C_{n}=q$
+\end_inset
+
+ הטור מתכנס אם"ם 
+\begin_inset Formula $q<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת: 
+\begin_inset Formula $\Sigma\frac{1}{n}\Rightarrow C_{n}\frac{1}{\sqrt[n]{n}}$
+\end_inset
+
+ המבחן לא עוזר..
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת: 
+\begin_inset Formula $\Sigma\left(\frac{x}{n}\right)^{n}\Rightarrow\lim\frac{x}{n}\rightarrow0<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+מבחן דלמבר לטורים חיוביים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{n}=\frac{a_{n+1}}{a_{n}}$
+\end_inset
+
+ אם 
+\begin_inset Formula $D_{n}\leq q<1$
+\end_inset
+
+ אז הטור מתכנס.
+ אם 
+\begin_inset Formula $D_{n}\geq1$
+\end_inset
+
+ הטור מתבדר.
+ אולם כאשר מדובר בגבול, המצב מעט שונה: 
+\begin_inset Formula $\lim\frac{a_{n+1}}{a_{n}}=q\Rightarrow q<1$
+\end_inset
+
+ מתכנס.
+ 
+\begin_inset Formula $q>1$
+\end_inset
+
+ מתבדר.
+ אך כאשר 
+\begin_inset Formula $q=1$
+\end_inset
+
+ לא ניתן לדעת.
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma q^{n}\Rightarrow\frac{q^{n+1}}{q^{n}}=q\rightarrow q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma\frac{1}{n}\Rightarrow\frac{n}{n+1}\rightarrow1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+)יותר מעניינת( 
+\begin_inset Formula $\Sigma\frac{x^{n}}{n!}\Rightarrow\frac{x^{n+1}n!}{\left(n+1\right)!x^{n}}=\frac{x}{n+1}\rightarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma n!\left(\frac{x}{n}\right)^{n}\Rightarrow D_{n}=\frac{\left(n+1\right)!x^{n+1}n^{n}}{\left(n+1\right)^{n+1}n!x^{n}}=\frac{\left(n+1\right)xn^{n}}{\left(n+1\right)^{n}}=x\cdot\left(\frac{n}{n+1}\right)^{n}\rightarrow x\frac{1}{e}=\frac{x}{e}$
+\end_inset
+
+ הטור מתכנס אם 
+\begin_inset Formula $x<e$
+\end_inset
+
+ ומתבדר אם 
+\begin_inset Formula $x>e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma\frac{\left(nx\right)^{n}}{n!}\Rightarrow D_{n}=\frac{\left(n+1\right)^{n+1}x^{n+1}n!}{\left(n+1\right)!n^{n}x^{n}}=\frac{x\left(n+1\right)^{n+1}}{\left(n+1\right)n^{n}}=x\left(\frac{n+1}{n}\right)^{n}\rightarrow xe$
+\end_inset
+
+ מתכנס אם 
+\begin_inset Formula $xe<1\Rightarrow x<\frac{1}{e}$
+\end_inset
+
+ מתבדר הפוך, ולא ברור אם 
+\begin_inset Formula $x=\frac{1}{e}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
