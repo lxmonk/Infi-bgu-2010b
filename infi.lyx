@@ -2280,7 +2280,7 @@ Bolzano
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 מבחן קושי לטורים חיוביים
 \end_layout
 
@@ -2353,7 +2353,7 @@ Bolzano
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 מבחן דלמבר לטורים חיוביים
 \end_layout
 
@@ -2439,6 +2439,180 @@ Bolzano
 
  מתבדר הפוך, ולא ברור אם 
 \begin_inset Formula $x=\frac{1}{e}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+טורים בעלי סימנים כלשהם
+\end_layout
+
+\begin_layout Standard
+נתעסק רק במקרים בהם ישנם אינסוף איברים בעלי סימן חיובי ואינסוף איברים בעלי
+ סימן שלילי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ נחפש תנאי כללי להתכנסות של הטור.
+ הדבר דומה לתנאי התכנסות של הסדרה 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ של הסכומים החלקיים.
+ נקבע זאת על פי 
+\series bold
+קריטריון קושי
+\series default
+.
+ 
+\begin_inset Formula $\lim S_{n}=A\Leftrightarrow\left|S_{n'}-S_{n}\right|<\epsilon$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שכאשר 
+\begin_inset Formula $n>N$
+\end_inset
+
+ כלומר: 
+\begin_inset Formula $\left|\Sigma_{k=n+1}^{m}a_{k}\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+טורי לייבניץ
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+G.
+ Leibnitz
+\lang hebrew
+ 
+\begin_inset OptArg
+status open
+
+\begin_layout Plain Layout
+טורי לייבניץ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט אם סימני הטור מתחלפים, ובנוסף 
+\begin_inset Formula $\left|a_{n}\right|\rightarrow0$
+\end_inset
+
+ באופן מונוטוני, אז הטור מתכנס.
+ לדוגמא, הסדרה 
+\begin_inset Formula $\Sigma\frac{\left(-1\right)^{n+1}}{n}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}$
+\end_inset
+
+ מתכנסת.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+הגדרות
+\end_layout
+
+\begin_layout Standard
+אם טור 
+\begin_inset Formula $\Sigma a_{n}$
+\end_inset
+
+ מתכנס, וגם 
+\begin_inset Formula $\Sigma\left|a_{n}\right|$
+\end_inset
+
+ מתכנס, אזי 
+\begin_inset Formula $\Sigma a_{n}$
+\end_inset
+
+ יקרא 
+\series bold
+מתכנס בהחלט.
+\end_layout
+
+\begin_layout Standard
+אם טור 
+\begin_inset Formula $\Sigma a_{n}$
+\end_inset
+
+ מתכנס, ואבל 
+\begin_inset Formula $\Sigma\left|a_{n}\right|$
+\end_inset
+
+ מתבדר, אזי 
+\begin_inset Formula $\Sigma a_{n}$
+\end_inset
+
+ יקרא 
+\series bold
+מתכנס בתנאי.
+\end_layout
+
+\begin_layout Standard
+מההגדרה נובע כי אם טור חיובי מתכנס, אזי הוא מתכנס בהחלט.
+\end_layout
+
+\begin_layout Standard
+כמה דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma_{1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ מבחן קושי יביא ל
+\begin_inset Formula $C_{n}\rightarrow1$
+\end_inset
+
+ גם מבחן דלמבר לא מועיל 
+\begin_inset Formula $D_{n}\rightarrow1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma_{2}^{\infty}\frac{1}{n^{2}}=\frac{1}{4}+\frac{1}{9}+\ldots<\Sigma_{2}^{\infty}\frac{1}{n\left(n-1\right)}=\Sigma_{2}^{\infty}\left(\frac{1}{n-1}-\frac{1}{n}\right)=1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\frac{1}{3}=1$
+\end_inset
+
+ ולכן, ידוע כי הטור מתכנס.
+ הטור מתכנס לערך 
+\begin_inset Formula $\frac{\pi^{2}}{6}$
 \end_inset
 
 .
