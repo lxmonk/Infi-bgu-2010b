@@ -2386,6 +2386,10 @@ name "cor2:דוגמא-לא-מלאה:"
 \end_layout
 
 \begin_layout Section
+טורים חיוביים
+\end_layout
+
+\begin_layout Subsection
 מבחן קושי לטורים חיוביים )מבחן השורש של קושי( 
 \begin_inset OptArg
 status open
@@ -2487,7 +2491,7 @@ status open
  ולכן טור זה מתכנס.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 מבחן דלמבר לטורים חיוביים
 \end_layout
 
@@ -2911,8 +2915,7 @@ status open
 \begin_inset Formula \begin{eqnarray*}
 \Sigma_{2}^{\infty}\frac{1}{n^{2}} & = & \frac{1}{4}+\frac{1}{9}+\ldots<\Sigma_{2}^{\infty}\frac{1}{n\left(n-1\right)}=\Sigma_{2}^{\infty}\frac{n-\left(n-1\right)}{n\left(n-1\right)}=\\
  &  & \Sigma_{2}^{\infty}\left(\frac{\not n}{\not n\left(n-1\right)}-\frac{\not n\not-1}{n\not\left(n\not-\not1\right)}\right)=\\
- &  & \Sigma_{2}^{\infty}\left(\frac{1}{n-1}-\frac{1}{n}\right)=1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\frac{1}{3}=1\\
-\end{eqnarray*}
+ &  & \Sigma_{2}^{\infty}\left(\frac{1}{n-1}-\frac{1}{n}\right)=1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\frac{1}{3}=1\end{eqnarray*}
 
 \end_inset
 
