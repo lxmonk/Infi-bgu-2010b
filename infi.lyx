@@ -5,6 +5,7 @@
 \textclass scrreprt
 \begin_preamble
 \usepackage{culmus}
+\usepackage[samesize]{cancel}
 \end_preamble
 \use_default_options true
 \language hebrew
@@ -214,6 +215,28 @@ LatexCommand tableofcontents
 
 \begin_layout Chapter*
 תזכורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\f}[1][2,3]{\frac{\#1}{\#2}#1}
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cf}{\cfrac{}{}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\cdot}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2200,7 +2223,7 @@ Bolzano
 \end_layout
 
 \begin_layout Description
-\begin_inset Formula $\left(A\right)\,\Sigma a_{k},\,\left(B\right)\,\Sigma b_{k}$
+\begin_inset Formula $\left(A\right)\,\sum a_{k},\,\left(B\right)\,\sum b_{k}$
 \end_inset
 
 
@@ -2338,7 +2361,7 @@ reference "eq:1"
 \end_inset
 
  
-\begin_inset Formula $\Sigma\frac{1}{\sqrt{n\left(n+1\right)}}>\Sigma\frac{1}{\sqrt{\left(n+1\right)^{2}}}=\Sigma\frac{1}{n+1}$
+\begin_inset Formula $\sum\frac{1}{\sqrt{n\left(n+1\right)}}>\sum\frac{1}{\sqrt{\left(n+1\right)^{2}}}=\sum\frac{1}{n+1}$
 \end_inset
 
  קיבלנו טור הרמוני, שידוע שאינו מתכנס.
@@ -2347,12 +2370,12 @@ reference "eq:1"
 
 \begin_layout Itemize
 דוגמא נוספת: 
-\begin_inset Formula $\Sigma\frac{1}{n\sqrt[n]{n}}$
+\begin_inset Formula $\sum\frac{1}{n\sqrt[n]{n}}$
 \end_inset
 
 .
  נחלק בטור )המתבדר( ההרמוני 
-\begin_inset Formula $\Sigma\frac{1}{n}$
+\begin_inset Formula $\sum\frac{1}{n}$
 \end_inset
 
  ונקבל
@@ -2360,7 +2383,7 @@ reference "eq:1"
 \end_inset
 
  
-\begin_inset Formula $\frac{\Sigma\frac{1}{n\sqrt[n]{n}}}{\Sigma\frac{1}{n}}=\Sigma\frac{1\cdot n}{n\sqrt[n]{n}}=\frac{1}{\sqrt[n]{n}}\rightarrow1$
+\begin_inset Formula $\frac{\sum\frac{1}{n\sqrt[n]{n}}}{\sum\frac{1}{n}}=\sum\frac{1\cdot n}{n\sqrt[n]{n}}=\frac{1}{\sqrt[n]{n}}\rightarrow1$
 \end_inset
 
  משום שהמנה מתכנסת, נאמר שהטור הנתון והטור ההרמוני מתבדרים ביחד, ולכן הטור
@@ -2384,9 +2407,9 @@ name "cor2:דוגמא-לא-מלאה:"
 
 
 \begin_inset Formula \begin{eqnarray*}
-\Sigma\frac{n!^{2}}{\left(2n\right)!} & = & \Sigma\frac{n!n!}{1\cdot2\cdot3\cdot4\cdot\ldots\cdot2n}=\Sigma\frac{n!n!}{\underbrace{2\cdot4\cdot6\cdot\ldots2n}\cdot\underbrace{1\cdot3\cdot5\cdot7\cdot\left(2n-1\right)}}=\\
- &  & \Sigma\frac{\not n!n!}{2^{n}\not\left(n!\right)\cdot1\cdot3\cdot5\cdot7\cdot\left(2n-1\right)}=\\
- &  & \Sigma\frac{1\cdot2\cdot3\cdot\ldots\cdot n}{2^{n}\cdot1\cdot3\cdot5\cdot\ldots\cdot\left(2n-1\right)}=\frac{1}{1}+\frac{2}{3}+\frac{3}{5}+\frac{4}{7}+\frac{5}{8}+\frac{6}{9}+\ldots+\frac{1}{2^{n}}\end{eqnarray*}
+\sum\frac{n!^{2}}{\left(2n\right)!} & = & \sum\frac{n!n!}{1\cdot2\cdot3\cdot4\cdot\ldots\cdot2n}=\sum\frac{n!n!}{\underbrace{2\cdot4\cdot6\cdot\ldots2n}\cdot\underbrace{1\cdot3\cdot5\cdot7\cdot\left(2n-1\right)}}=\\
+ &  & \sum\frac{\not n!n!}{2^{n}\not\left(n!\right)\cdot1\cdot3\cdot5\cdot7\cdot\left(2n-1\right)}=\\
+ &  & \sum\frac{1\cdot2\cdot3\cdot\ldots\cdot n}{2^{n}\cdot1\cdot3\cdot5\cdot\ldots\cdot\left(2n-1\right)}=\frac{1}{1}+\frac{2}{3}+\frac{3}{5}+\frac{4}{7}+\frac{5}{8}+\frac{6}{9}+\ldots+\frac{1}{2^{n}}\end{eqnarray*}
 
 \end_inset
 
@@ -2464,7 +2487,7 @@ status open
 
 \begin_layout Itemize
 דוגמא לשימוש: 
-\begin_inset Formula $\Sigma\frac{1}{\left(\ln n\right)^{n}}\Rightarrow C_{n}=\frac{1}{\ln n}\Rightarrow\lim C_{n}=0<1$
+\begin_inset Formula $\sum\frac{1}{\left(\ln n\right)^{n}}\Rightarrow C_{n}=\frac{1}{\ln n}\Rightarrow\lim C_{n}=0<1$
 \end_inset
 
  מכאן, שהטור מתכנס.
@@ -2484,7 +2507,7 @@ status open
 
 \begin_layout Itemize
 דוגמא נוספת: 
-\begin_inset Formula $\Sigma\frac{1}{n}\Rightarrow C_{n}=\frac{1}{\sqrt[n]{n}}=1$
+\begin_inset Formula $\sum\frac{1}{n}\Rightarrow C_{n}=\frac{1}{\sqrt[n]{n}}=1$
 \end_inset
 
  ולכן המבחן לא עוזר\SpecialChar \ldots{}
@@ -2493,7 +2516,7 @@ status open
 
 \begin_layout Itemize
 דוגמא נוספת: 
-\begin_inset Formula $\Sigma\left(\frac{x}{n}\right)^{n}\Rightarrow\lim\frac{x}{n}\rightarrow0<1$
+\begin_inset Formula $\sum\left(\frac{x}{n}\right)^{n}\Rightarrow\lim\frac{x}{n}\rightarrow0<1$
 \end_inset
 
  ולכן טור זה מתכנס.
@@ -2596,7 +2619,7 @@ status open
 
 \begin_layout Standard
 יהי 
-\begin_inset Formula $\Sigma a_{n}$
+\begin_inset Formula $\sum a_{n}$
 \end_inset
 
  טור חיובי אינסופי.
@@ -2670,7 +2693,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\Sigma q^{n}\Rightarrow D_{n}=\frac{q^{n+1}}{q^{n}}=q\rightarrow q$
+\begin_inset Formula $\sum q^{n}\Rightarrow D_{n}=\frac{q^{n+1}}{q^{n}}=q\rightarrow q$
 \end_inset
 
  ולכן ההתכנסות תלויה בערכו של 
@@ -2681,7 +2704,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\Sigma\frac{1}{n}\Rightarrow D_{n}=\frac{\frac{1}{n+1}}{\frac{1}{n}}=\frac{n}{n+1}\rightarrow1$
+\begin_inset Formula $\sum\frac{1}{n}\Rightarrow D_{n}=\frac{\frac{1}{n+1}}{\frac{1}{n}}=\frac{n}{n+1}\rightarrow1$
 \end_inset
 
  ולכן ידוע שהטור לא מתכנס )טור הרמוני - לא מפתיע(
@@ -2689,7 +2712,7 @@ status open
 
 \begin_layout Itemize
 )דוגמא יותר מעניינת( 
-\begin_inset Formula $\Sigma\frac{x^{n}}{n!}\Rightarrow D_{n}=\frac{x^{\not n+1}\not n!}{\left(n+1\right)!\not x^{n}}=\frac{x}{n+1}\rightarrow0$
+\begin_inset Formula $\sum\frac{x^{n}}{n!}\Rightarrow D_{n}=\frac{x^{\not n+1}\not n!}{\left(n+1\right)!\not x^{n}}=\frac{x}{n+1}\rightarrow0$
 \end_inset
 
  הטור מתכנס )לערך 
@@ -2701,7 +2724,7 @@ status open
 
 \begin_layout Itemize
 \begin_inset Formula \begin{eqnarray*}
-\Sigma n!\left(\frac{x}{n}\right)^{n}\Rightarrow D_{n} & = & \frac{\left(n+1\right)!x^{n+1}n^{n}}{\left(n+1\right)^{n+1}n!x^{n}}=\frac{\left(n+1\right)xn^{n}}{\left(n+1\right)^{n+1}}=\frac{xn^{n}}{\left(n+1\right)^{n}}=\\
+\sum n!\left(\frac{x}{n}\right)^{n}\Rightarrow D_{n} & = & \frac{\left(n+1\right)!x^{n+1}n^{n}}{\left(n+1\right)^{n+1}n!x^{n}}=\frac{\left(n+1\right)xn^{n}}{\left(n+1\right)^{n+1}}=\frac{xn^{n}}{\left(n+1\right)^{n}}=\\
  &  & x\cdot\left(\frac{n}{n+1}\right)^{n}=x\cdot\left(\frac{1}{1+\frac{1}{n}}\right)^{n}=\\
  &  & x\cdot\frac{1^{n}}{\left(1+\frac{1}{n}\right)^{n}}\rightarrow x\cdot\frac{1^{n}}{e}\rightarrow x\frac{1}{e}=\frac{x}{e}\end{eqnarray*}
 
@@ -2719,7 +2742,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\Sigma\frac{\left(nx\right)^{n}}{n!}\Rightarrow D_{n}=\frac{\left(n+1\right)^{n+1}x^{n+1}n!}{\left(n+1\right)!n^{n}x^{n}}=\frac{x\left(n+1\right)^{n+1}}{\left(n+1\right)n^{n}}=x\left(\frac{n+1}{n}\right)^{n}=x\left(1+\frac{1}{n}\right)^{n}\rightarrow xe$
+\begin_inset Formula $\sum\frac{\left(nx\right)^{n}}{n!}\Rightarrow D_{n}=\frac{\left(n+1\right)^{n+1}x^{n+1}n!}{\left(n+1\right)!n^{n}x^{n}}=\frac{x\left(n+1\right)^{n+1}}{\left(n+1\right)n^{n}}=x\left(\frac{n+1}{n}\right)^{n}=x\left(1+\frac{1}{n}\right)^{n}\rightarrow xe$
 \end_inset
 
  
@@ -2751,7 +2774,7 @@ status open
 
 \color red
 נחפש תנאי כללי להתכנסות של הטור 
-\begin_inset Formula $\left(A\right)\,\Sigma_{n=1}^{\infty}a_{n}$
+\begin_inset Formula $\left(A\right)\,\sum_{n=1}^{\infty}a_{n}$
 \end_inset
 
 .
@@ -2782,7 +2805,7 @@ status open
 \end_inset
 
  כלומר: 
-\begin_inset Formula $\left|\Sigma_{k=n+1}^{m}a_{k}\right|<\epsilon$
+\begin_inset Formula $\left|\sum_{k=n+1}^{m}a_{k}\right|<\epsilon$
 \end_inset
 
 
@@ -2838,7 +2861,7 @@ status open
 
  באופן מונוטוני, אז הטור מתכנס.
  לדוגמא, הסדרה 
-\begin_inset Formula $\Sigma\frac{\left(-1\right)^{n+1}}{n}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}$
+\begin_inset Formula $\sum\frac{\left(-1\right)^{n+1}}{n}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}$
 \end_inset
 
  מתכנסת.
@@ -2853,15 +2876,15 @@ status open
 
 \begin_layout Description
 הגדרה אם טור 
-\begin_inset Formula $\Sigma a_{n}$
+\begin_inset Formula $\sum a_{n}$
 \end_inset
 
  מתכנס, וגם 
-\begin_inset Formula $\Sigma\left|a_{n}\right|$
+\begin_inset Formula $\sum\left|a_{n}\right|$
 \end_inset
 
  מתכנס, אזי 
-\begin_inset Formula $\Sigma a_{n}$
+\begin_inset Formula $\sum a_{n}$
 \end_inset
 
  יקרא 
@@ -2877,15 +2900,15 @@ status open
 \end_deeper
 \begin_layout Description
 הגדרה אם טור 
-\begin_inset Formula $\Sigma a_{n}$
+\begin_inset Formula $\sum a_{n}$
 \end_inset
 
  מתכנס, אבל 
-\begin_inset Formula $\Sigma\left|a_{n}\right|$
+\begin_inset Formula $\sum\left|a_{n}\right|$
 \end_inset
 
  מתבדר, אזי 
-\begin_inset Formula $\Sigma a_{n}$
+\begin_inset Formula $\sum a_{n}$
 \end_inset
 
  יקרא 
@@ -2898,7 +2921,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\Sigma_{1}^{\infty}\frac{1}{n^{2}}$
+\begin_inset Formula $\sum_{1}^{\infty}\frac{1}{n^{2}}$
 \end_inset
 
 : 
@@ -2921,9 +2944,9 @@ status open
 \begin_deeper
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\Sigma_{2}^{\infty}\frac{1}{n^{2}} & = & \frac{1}{4}+\frac{1}{9}+\ldots<\Sigma_{2}^{\infty}\frac{1}{n\left(n-1\right)}=\Sigma_{2}^{\infty}\frac{n-\left(n-1\right)}{n\left(n-1\right)}=\\
- &  & \Sigma_{2}^{\infty}\left(\frac{\not n}{\not n\left(n-1\right)}-\frac{\not n\not-1}{n\not\left(n\not-\not1\right)}\right)=\\
- &  & \Sigma_{2}^{\infty}\left(\frac{1}{n-1}-\frac{1}{n}\right)=1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\frac{1}{3}=1\end{eqnarray*}
+\sum_{2}^{\infty}\frac{1}{n^{2}} & = & \frac{1}{4}+\frac{1}{9}+\ldots<\sum_{2}^{\infty}\frac{1}{n\left(n-1\right)}=\sum_{2}^{\infty}\frac{n-\left(n-1\right)}{n\left(n-1\right)}=\\
+ &  & \sum_{2}^{\infty}\left(\cfrac{\cancelto{1}n}{\cancel n\left(n-1\right)}-\dfrac{\cancelto{1}{n-1}}{n\cancel{\left(n-1\right)}}\right)=\\
+ &  & \sum_{2}^{\infty}\left(\frac{1}{n-1}-\frac{1}{n}\right)=\underbrace{1-\cancel{\frac{1}{2}}}_{n=2}+\underbrace{\cancel{\frac{1}{2}}-\bcancel{\frac{1}{3}}}_{n=3}+\underbrace{\bcancel{\frac{1}{3}}-\cfrac{1}{4}}_{n=4}\dots\thickapprox1\end{eqnarray*}
 
 \end_inset
 
@@ -2935,5 +2958,20 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+placeholder
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
