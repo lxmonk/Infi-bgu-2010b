@@ -219,20 +219,6 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\f}[1][2,3]{\frac{\#1}{\#2}#1}
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset FormulaMacro
-\newcommand{\cf}{\cfrac{}{}}
-\end_inset
-
- 
-\begin_inset FormulaMacro
 \newcommand{\cd}{\cdot}
 \end_inset
 
@@ -2958,6 +2944,46 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+קריטריון קושי:
+\begin_inset Formula \[
+\left\{ a_{n}\right\} _{n=1}^{\infty}\textnormal{converges}\Leftrightarrow\forall_{\varepsilon>0}\exists_{n_{0\left(\varepsilon\right)}}\forall_{n>n_{0}}\forall_{p\in\mathbb{N}}\left|a_{n+p}-a_{n}\right|<\varepsilon\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גבולות חלקיים: הגדרה --
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ x_{n}\right\} _{1}^{\infty}$
+\end_inset
+
+ סדרה.
+ המספר 
+\begin_inset Formula $l$
+\end_inset
+
+ נקרא גבול חלקי אם קיימת תת-סדרה 
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+ המתכנסת ל
+\begin_inset Formula $l$
+\end_inset
+
+.
+ הגבול החלקי הקטן )גדול( ביותר נקרא גבול תחתון )עליון( ומסומן 
+\begin_inset Formula $\left(\overline{\lim}x_{n}\right)\,\underline{\lim}x_{n}$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
