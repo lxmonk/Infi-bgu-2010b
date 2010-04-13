@@ -1588,6 +1588,38 @@ C_{n} & = & H_{n}-\ln n=1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}-\ln n>\ln2+
 גבולות חלקיים
 \end_layout
 
+\begin_layout Description
+הגדרה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ x_{n}\right\} _{1}^{\infty}$
+\end_inset
+
+ סדרה.
+ המספר 
+\begin_inset Formula $l$
+\end_inset
+
+ נקרא גבול חלקי אם קיימת תת-סדרה 
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+ המתכנסת ל
+\begin_inset Formula $l$
+\end_inset
+
+.
+ הגבול החלקי הקטן )גדול( ביותר נקרא גבול תחתון )עליון( ומסומן 
+\begin_inset Formula $\left(\overline{\lim}x_{n}\right)\,\underline{\lim}x_{n}$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 דוגמאות לגבולות חלקיים
 \end_layout
@@ -2120,6 +2152,16 @@ Bolzano
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+)בנוסח דומה( 
+\begin_inset Formula \[
+\left\{ a_{n}\right\} _{n=1}^{\infty}\textnormal{converges}\Leftrightarrow\forall_{\varepsilon>0}\exists_{n_{0}\left(\varepsilon\right)}\forall_{n>n_{0}}\forall_{p\in\mathbb{N}}\left|a_{n+p}-a_{n}\right|<\varepsilon\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -2209,7 +2251,19 @@ Bolzano
 \end_layout
 
 \begin_layout Description
-\begin_inset Formula $\left(A\right)\,\sum a_{k},\,\left(B\right)\,\sum b_{k}$
+\begin_inset Formula $\left(A\right)=\sum a_{k},\,\left(B\right)=\sum b_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט תנאי הכרחי להתכנסות טור:
+\begin_inset Formula $\left\{ a_{n}\right\} ^{\infty}\rightarrow0$
+\end_inset
+
+ כלומר: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}\neq0\Rightarrow a_{n}\textnormal{ diverges}$
 \end_inset
 
 
@@ -2333,6 +2387,41 @@ reference "eq:1"
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+הטור הסטנדרטי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{p}}=\begin{cases}
+p>1 & \textnormal{converges}\\
+p<1 & \textnormal{diverges}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמא לשימוש: 
+\begin_inset Formula $\sum_{10}^{\infty}\frac{n^{2}\cd\sqrt[2010]{n+3}+2n+1}{3n^{3}-4n+2}\sim\frac{n^{2\frac{1}{2010}}}{n^{3}}=\frac{\overbrace{1}^{a_{n}}}{\underbrace{n^{\frac{2009}{2010}}}_{b_{n}}}$
+\end_inset
+
+.
+ עפ"י הטור הסטנדרטי, ברור כי 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ מתבדר.
+ משום ש 
+\begin_inset Formula $\lim\frac{a_{n}}{b_{n}}=\frac{1}{3}$
+\end_inset
+
+ נסיק כי גם 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ מתבדר.
+\end_layout
+
 \begin_layout Paragraph
 דוגמאות:
 \end_layout
@@ -2457,7 +2546,7 @@ status open
 
 \begin_layout Standard
 לרוב נעשה שימוש בגרסא חלשה: 
-\begin_inset Formula $\lim C_{n}=q<1$
+\begin_inset Formula $a_{n}\textnormal{ converges}\Leftarrow\lim C_{n}=q<1$
 \end_inset
 
 .
@@ -2673,6 +2762,17 @@ status open
 )כשמדובר בגבול(
 \end_layout
 
+\begin_layout Standard
+כלומר: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_{n}}=\begin{cases}
+>1 & \textnormal{diverges}\\
+<1 & \textnormal{converges}\\
+=1 & ???\end{cases}$
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 דוגמאות:
@@ -2747,7 +2847,7 @@ status open
 \end_layout
 
 \begin_layout Section
-טורים בעלי סימנים כלשהם
+טורים בעלי סימנים כלשהם )מתחלפים(
 \end_layout
 
 \begin_layout Standard
@@ -2845,7 +2945,11 @@ status open
 \begin_inset Formula $\left|a_{n}\right|\rightarrow0$
 \end_inset
 
- באופן מונוטוני, אז הטור מתכנס.
+ 
+\series bold
+באופן מונוטוני
+\series default
+, אז הטור מתכנס.
  לדוגמא, הסדרה 
 \begin_inset Formula $\sum\frac{\left(-1\right)^{n+1}}{n}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}$
 \end_inset
@@ -2903,6 +3007,117 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+סוג ההתכנסות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum\left|a_{n}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+התכנסות בהחלט
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מתכנס
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מתכנס 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+התכנסות בתנאי
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מתכנס
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מתבדר
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 כמה דוגמאות:
 \end_layout
 
@@ -2936,7 +3151,7 @@ status open
 
 \end_inset
 
- ולכן, ידוע כי הטור מתכנס )לערך 
+ולכן, ידוע כי הטור מתכנס )לערך 
 \begin_inset Formula $\frac{\pi^{2}}{6}$
 \end_inset
 
@@ -2944,56 +3159,217 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-קריטריון קושי:
-\begin_inset Formula \[
-\left\{ a_{n}\right\} _{n=1}^{\infty}\textnormal{converges}\Leftrightarrow\forall_{\varepsilon>0}\exists_{n_{0\left(\varepsilon\right)}}\forall_{n>n_{0}}\forall_{p\in\mathbb{N}}\left|a_{n+p}-a_{n}\right|<\varepsilon\]
-
-\end_inset
-
-
+\begin_layout Section
+טורים של מכפלת סדרות
 \end_layout
 
 \begin_layout Standard
-גבולות חלקיים: הגדרה --
+נתבונן בטור 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}\cd b_{n}$
+\end_inset
+
+:
 \end_layout
 
-\begin_layout Standard
-תהי 
-\begin_inset Formula $\left\{ x_{n}\right\} _{1}^{\infty}$
-\end_inset
-
- סדרה.
- המספר 
-\begin_inset Formula $l$
-\end_inset
-
- נקרא גבול חלקי אם קיימת תת-סדרה 
-\begin_inset Formula $x_{n_{k}}$
-\end_inset
-
- המתכנסת ל
-\begin_inset Formula $l$
-\end_inset
-
-.
- הגבול החלקי הקטן )גדול( ביותר נקרא גבול תחתון )עליון( ומסומן 
-\begin_inset Formula $\left(\overline{\lim}x_{n}\right)\,\underline{\lim}x_{n}$
-\end_inset
-
- בהתאמה.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
+\begin_layout Subsection
+למה
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- טרנספורמציית אבל
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family roman
+\series medium
+\shape default
+\size normal
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+(Abel)
+\lang hebrew
+ 
+\begin_inset OptArg
 status open
 
 \begin_layout Plain Layout
-
+טרנספורמציית אבל
+\family sans
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family roman
+\series medium
+\shape default
+\size normal
+\emph default
+\bar default
+\noun default
+\color inherit
 \lang english
-placeholder
+(Abel)
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונות שתי סדרות 
+\series bold
+סופיות
+\series default
+ של מספרים ממשיים: 
+\begin_inset Formula $\left\{ \alpha_{i}\right\} _{i=1}^{m},\,\left\{ \beta_{i}\right\} _{i=1}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן את הסכומים החלקיים של 
+\begin_inset Formula $\beta$
+\end_inset
+
+ כך: 
+\begin_inset Formula $B_{k}=\beta_{1}+\beta_{2}+\dots+\beta_{k}$
+\end_inset
+
+.
+ אזי: 
+\begin_inset Formula \begin{equation}
+S=\sum_{i=1}^{m}\alpha_{i}\beta_{i}=\alpha_{m}B_{m}-\sum_{i=1}^{m-1}\left(\alpha_{i+1}-\alpha_{i}\right)\beta_{i}\label{eq:Abel Ttransformation}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה נסמן 
+\begin_inset Formula $B_{0}=0$
+\end_inset
+
+.
+ כעת, 
+\begin_inset Formula \begin{eqnarray*}
+S & = & \sum_{i=1}^{m}\alpha_{i}\beta_{i}=\sum\alpha_{i}\left(\overbrace{B_{i}-B_{i-1}}^{\beta_{i}}\right)=\sum_{i=1}^{m}\left(\alpha_{i}B_{i}-\alpha_{i}B_{i-1}\right)=\sum_{i=1}^{m}\alpha_{i}B_{i}-\overbrace{\sum_{i=1}^{m}\alpha_{i}B_{i-1}}^{*}\\
+ & = & \sharp\sum_{i=1}^{m}\alpha_{i}B_{i}-\sum_{i=\mathbf{0}}^{\mathbf{m-1}}\alpha_{i+1}B_{i}=\alpha_{m}B_{m}+\sum_{i=1}^{m-1}\alpha_{i}B_{i}-\sum_{i=1}^{m-1}\alpha_{i+1}B_{i}=\alpha_{m}B_{m}+\sum_{i=1}^{m-1}B_{i}\left(\alpha_{i}-\alpha_{i+1}\right)=\\
+ & = & \alpha_{m}B_{m}-\sum_{i=1}^{m-1}\left(\alpha_{i+1}-\alpha_{i}\right)B_{i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\sharp$
+\end_inset
+
+ -- *'s indices changed to [0, m-1]
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection
+משפט עזר
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left|B_{i}\right|_{1\leq i\leq m}\leq L$
+\end_inset
+
+ )סדרה של סכומים חלקיים של 
+\begin_inset Formula $\left\{ \beta_{i}\right\} $
+\end_inset
+
+( חסומה ו- 
+\begin_inset Formula $\left\{ \alpha_{i}\right\} _{i=1}^{m}$
+\end_inset
+
+ מונוטונית, אזי: 
+\begin_inset Formula \begin{equation}
+\left|S\right|=\left|\sum_{i=1}^{m}\alpha_{i}\beta_{i}\right|\leq L\left(2\left|\alpha_{m}\right|+\left|\alpha_{1}\right|\right)\label{eq:L2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\left|S\right|\leq$
 \end_inset
 
 
