@@ -2387,7 +2387,7 @@ reference "eq:1"
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
+\begin_layout Section
 הטור הסטנדרטי
 \end_layout
 
@@ -3172,7 +3172,27 @@ status open
 \end_layout
 
 \begin_layout Subsection
-למה
+מבחן דריכלה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\sum_{1}^{\infty}b_{n}$
+\end_inset
+
+ חסום )סדרת הסכומים החלקיים חסומה(, ו - 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ מונוטונית ושואפת לאפס, אז 
+\begin_inset Formula $\sum_{1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Subsubsection
+משפט עזר
 \family sans
 \series bold
 \shape up
@@ -3287,7 +3307,7 @@ status open
 .
  אזי: 
 \begin_inset Formula \begin{equation}
-S=\sum_{i=1}^{m}\alpha_{i}\beta_{i}=\alpha_{m}B_{m}-\sum_{i=1}^{m-1}\left(\alpha_{i+1}-\alpha_{i}\right)\beta_{i}\label{eq:Abel Ttransformation}\end{equation}
+S=\sum_{i=1}^{m}\alpha_{i}\beta_{i}=\alpha_{m}B_{m}-\sum_{i=1}^{m-1}\left(\alpha_{i+1}-\alpha_{i}\right)\beta_{i}\label{eq:AbelTransform}\end{equation}
 
 \end_inset
 
@@ -3338,8 +3358,27 @@ S & = & \sum_{i=1}^{m}\alpha_{i}\beta_{i}=\sum\alpha_{i}\left(\overbrace{B_{i}-B
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 משפט עזר
+\family sans
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
 \end_layout
 
 \begin_layout Standard
@@ -3369,9 +3408,424 @@ S & = & \sum_{i=1}^{m}\alpha_{i}\beta_{i}=\sum\alpha_{i}\left(\overbrace{B_{i}-B
 \end_layout
 
 \begin_layout Description
-\begin_inset Formula $\left|S\right|\leq$
+\begin_inset Formula $\left|S\right|\overbrace{\leq^{*}}^{\textnormal{see 1}}\overbrace{\left|\alpha_{m}B_{m}\right|+\left|\sum_{i=1}^{m-1}\left(\alpha_{i+1}-\alpha_{i}\right)B_{i}\right|}^{\prettyref{eq:AbelTransform}}\leq^{*}\left|\alpha_{m}B_{m}\right|+\sum_{i=1}^{m}\left|B_{i}\right|\cd\left|\alpha_{i+1}-\alpha_{i}\right|\leq$
 \end_inset
 
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+- ע"פ אי שיוויון המשולש
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left|S\right|\leq\left|\alpha_{m}\right|\cd\overbrace{L}^{\textnormal{as given}}+L\cd\sum_{i=1}^{m-1}\left|\alpha_{i+1}-\alpha_{i}\right|\leq$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מונוטונית עולה, נקבל את הסדרה הטלסקופית 
+\begin_inset Formula $\alpha_{2}-\alpha_{1}+\alpha_{2}-\alpha_{3}\dots\alpha_{m}-\alpha_{m-1}=\alpha_{m}-\alpha_{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מונוטונית יורדת, נקבל את הסדרה הטלסקופית 
+\begin_inset Formula $-\left(\alpha_{2}-\alpha_{1}+\alpha_{2}-\alpha_{3}\dots\alpha_{m}-\alpha_{m-1}\right)=\alpha_{1}-\alpha_{m}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+כלומר: בכל מקרה נקבל את 
+\begin_inset Formula $\left|\alpha_{m}-\alpha_{1}\right|$
+\end_inset
+
+.
+ נציב זאת ונקבל:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left|S\right|\leq^{*}L\cd\left|\alpha_{m}\right|+L\cd\left|\alpha_{m}-\alpha_{1}\right|\leq^{*}L\left(2\left|\alpha_{m}\right|+\left|\alpha_{1}\right|\right)$
+\end_inset
+
+ מש"ל.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+תזכורת מבחן דריכלה )לטורי כפל של סדרות(: אם 
+\begin_inset Formula $\sum_{1}^{\infty}b_{n}$
+\end_inset
+
+ חסום )סדרת הסכומים החלקיים חסומה(, ו - 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ מונוטונית ושואפת לאפס, אז הטור 
+\begin_inset Formula $\sum_{1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Description
+הוכחה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $S_{n}=b_{1}+b_{2}+\dots+b_{n}$
+\end_inset
+
+, בנוסף, על פי הנתון 
+\begin_inset Formula $\left|S_{n}\right|\leq M$
+\end_inset
+
+ .
+\begin_inset Newline newline
+\end_inset
+
+מכאן, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}\rightarrow0\Rightarrow\left|a_{n}\right|\leq\frac{\varepsilon}{3M}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B_{k}=S_{n+k}-S_{n}=b_{n+1}+b_{n+2}+\dots+b_{n+k}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\dagger\sum_{i=1}^{p}\underbrace{a_{n+i}}_{(1)}\underbrace{b_{n+i}}_{(2)}=a_{n+1}b_{n+1}+a_{n+2}b_{n+2}+\dots+a_{n+p}b_{n+p}\leq$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+1
+\numeric off
+( - מונוטונית ע"פ 
+\lang english
+
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "eq:L2"
+
+\end_inset
+
+
+\lang hebrew
+
+\begin_inset space \hfill{}
+\end_inset
+
+)
+\numeric on
+2
+\numeric off
+( - סכומים חלקיים חסומים
+\begin_inset Newline newline
+\end_inset
+
+כעת, על פי 
+\lang english
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula $\dagger\leq M\left(\overbrace{2\left|a_{p}\right|}^{<\frac{2\varepsilon}{3M}}+\overbrace{\left|a_{1}\right|}^{<\frac{\varepsilon}{3M}}\right)\leq M\cd\frac{3\varepsilon}{3M}=\varepsilon\rightarrow0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+על פי קריטריון קושי, הטור 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמא 
+\begin_inset Formula $\sum_{1}^{\infty}\frac{\sin\left(n\alpha\right)}{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $b_{n}=\sin\left(n\alpha\right)$
+\end_inset
+
+ - חסומה.
+ הוכחה על פי אלגברה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $a_{n}=\frac{1}{n}\rightarrow0$
+\end_inset
+
+ מונוטונית ושואפת לאפס.
+\begin_inset Newline newline
+\end_inset
+
+לכן, 
+\series bold
+לפי משפט דריכלה הטור מתכנס.
+\end_layout
+
+\begin_layout Subsection
+משפט אבל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ מתכנס, ו - 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ מונוטונית וחסומה, אזי 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ מתכנס.
+\begin_inset Newline newline
+\end_inset
+
+)לא נדרש כי 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ תתכנס לאפס(
+\end_layout
+
+\begin_layout Description
+הוכחה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+משום שהסדרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+a
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ מונוטונית וחסומה, נסיק כי היא מתכנסת.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $a=\lim a_{n}$
+\end_inset
+
+.
+ אזי, הסדרה המתקבלת 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $\left\{ a_{n}-a\right\} \rightarrow0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ מונוטונית ושואפת לאפס.
+\end_layout
+
+\begin_layout Standard
+נתון כי הטור 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ מתכנס, ומכאן נסיק כי 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ חסומה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+לפי מבחן דריכלה, הטור 
+\begin_inset Formula $\sum\left(a_{n}-a\right)\cd b_{n}$
+\end_inset
+
+ מתכנס.
+ מכאן,
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula $\sum a_{n}b_{n}=\sum\left(\left(a_{n}-a\right)+a\right)b_{n}\overbrace{=}^{(\#)}\underbrace{\sum\left(a_{n}-a\right)b_{n}}_{(\$)}+\underbrace{a\sum b_{n}}_{(\%)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לבצע את המעבר ב# משום ששני הטורים מתכנסים.
+ הטור $ מתכנס ע"פ משפט דריכלה, והטור % מתכנס על פי הנתון.
+\begin_inset Newline newline
+\end_inset
+
+מש"ל
+\end_layout
+
+\begin_layout Description
+דוגמא 
+\begin_inset Formula $\sum_{2}^{\infty}\frac{\sin\left(n\alpha\right)\cdot\cos\frac{\pi}{n}}{\ln\left(\ln n\right)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+הסדרה 
+\begin_inset Formula $\cos\frac{\pi}{n}$
+\end_inset
+
+ מונוטונית וחסומה.
+\begin_inset Newline newline
+\end_inset
+
+נותר לטפל ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $\sum_{2}^{\infty}\frac{\sin\left(n\alpha\right)}{\ln\left(\ln n\right)}$
+\end_inset
+
+.
+ הסכומים החלקיים של 
+\begin_inset Formula $\left\{ \sin\left(n\alpha\right)\right\} $
+\end_inset
+
+ חסומים, ו - 
+\begin_inset Formula $\left\{ \frac{1}{\ln\left(\ln n\right)}\right\} \rightarrow0$
+\end_inset
+
+.
+ לפי משפט אבל הטור מתכנס.
+\end_layout
+
+\begin_layout Description
 
 \end_layout
 
