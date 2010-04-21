@@ -243,6 +243,28 @@ a+aq+aq^{2}+aq^{3}+\ldots=\frac{a}{1-q}\quad\left|q\right|<1\]
 
 \end_layout
 
+\begin_layout Paragraph
+זהויות
+\begin_inset space ~
+\end_inset
+
+טריגונומטיריות
+\begin_inset space ~
+\end_inset
+
+חשובות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(\alpha+\beta\right) & = & \sin\alpha\cd\cos\beta+\sin\beta\cd\cos\alpha\\
+\cos\left(\alpha+\beta\right) & = & \cos\alpha\cd\cos\beta+\sin\alpha\cd\sin\beta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 סדרות
 \end_layout
@@ -3826,6 +3848,65 @@ a
 \end_layout
 
 \begin_layout Description
+דוגמא 
+\begin_inset Formula $a_{n}=\left\{ \cos\frac{\pi}{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \[
+a_{n+1}-a_{n}=\cos\frac{\pi}{n+1}-\cos\frac{\pi}{n}=-2\sin\frac{\overbrace{\frac{\pi}{n+1}+\frac{\pi}{n}}^{<\frac{\pi}{2}}}{2}\cd\sin\frac{\overbrace{\frac{\pi}{n+1}-\frac{\pi}{n}}^{<0}}{2}\]
+
+\end_inset
+
+ כלומר: הסדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מונוטונית.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+דוגמא 
+\begin_inset Formula $S_{n}=\sum_{1}^{n}\sin\left(n\alpha\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset Formula $S_{n}=\sum_{1}^{n}\sin\left(n\alpha\right)|\cd\frac{\sin\frac{\alpha}{2}}{\sin\frac{\alpha}{2}}=\sin\alpha\sin\frac{\alpha}{2}+\sin2\alpha\sin\frac{\alpha}{2}+\ldots+\sin n\alpha\sin\frac{\alpha}{2}\,\left(\#\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset Formula $\left[\cos\left(\alpha+\beta\right)-\cos\left(\alpha-\beta\right)=-2\sin\alpha\sin\beta\right]\Rightarrow\sin\alpha\sin\beta=\frac{1}{2}\left(\cos\left(\alpha-\beta\right)-\cos\left(\alpha+\beta\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset Formula $\left(\#\right)\Rightarrow\frac{1}{2}\left[\left(\cos\frac{\alpha}{2}-\cos\frac{3\alpha}{2}\right)+\left(\cos\frac{3\alpha}{2}-\cos\frac{5\alpha}{2}\right)+\ldots\right]\,\textnormal{a telescopic series}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\align left
+\begin_inset Formula $\left(\#\right)=\frac{}{}$
+\end_inset
+
 
 \end_layout
 
