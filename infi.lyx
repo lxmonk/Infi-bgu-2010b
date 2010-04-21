@@ -3876,39 +3876,462 @@ a_{n+1}-a_{n}=\cos\frac{\pi}{n+1}-\cos\frac{\pi}{n}=-2\sin\frac{\overbrace{\frac
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+S_{n}=\sum_{1}^{n}\sin\left(n\alpha\right)|\cd\frac{\sin\frac{\alpha}{2}}{\sin\frac{\alpha}{2}}=\sin\alpha\sin\frac{\alpha}{2}+\sin2\alpha\sin\frac{\alpha}{2}+\ldots+\sin n\alpha\sin\frac{\alpha}{2}\,\left(\#\right)\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+\left[\cos\left(\alpha+\beta\right)-\cos\left(\alpha-\beta\right)=-2\sin\alpha\sin\beta\right]\Rightarrow\sin\alpha\sin\beta=\frac{1}{2}\left(\cos\left(\alpha-\beta\right)-\cos\left(\alpha+\beta\right)\right)\]
+
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\left(\#\right) & = & \frac{1}{2}\left[\left(\cos\frac{\alpha}{2}-\cos\frac{3\alpha}{2}\right)+\left(\cos\frac{3\alpha}{2}-\cos\frac{5\alpha}{2}\right)+\ldots\right]\,\textnormal{a telescopic series}=\\
+ & = & \frac{\frac{1}{2}\left(\cos\frac{\alpha}{2}-\cos\frac{\left(n+1\right)\alpha}{2}\right)}{\sin\frac{\alpha}{2}}\Rightarrow\left|S_{n}\right|\leq\frac{1}{\left|\sin\frac{\alpha}{2}\right|}\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Description
-\align left
-\begin_inset Formula $S_{n}=\sum_{1}^{n}\sin\left(n\alpha\right)|\cd\frac{\sin\frac{\alpha}{2}}{\sin\frac{\alpha}{2}}=\sin\alpha\sin\frac{\alpha}{2}+\sin2\alpha\sin\frac{\alpha}{2}+\ldots+\sin n\alpha\sin\frac{\alpha}{2}\,\left(\#\right)$
+\begin_layout Subsection
+השוואה:
+\begin_inset space ~
+\end_inset
+
+משפטי
+\begin_inset space ~
+\end_inset
+
+אבל
+\begin_inset space ~
+\end_inset
+
+ודריכלה
+\end_layout
+
+\begin_layout Standard
+התכנסות טורים שהם כפל של סדרות 
+\begin_inset Formula $\left(\sum a_{n}\cd b_{n}\right)$
+\end_inset
+
+:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+משפט דיריכלה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+משפט אבל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הטור 
+\begin_inset Formula ${\displaystyle \sum_{n=1}^{\infty}b_{n}}$
+\end_inset
+
+ חסום
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הטור 
+\begin_inset Formula ${\displaystyle \sum_{n=1}^{\infty}b_{n}}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הסדרה 
+\begin_inset Formula $\left\{ a_{n}\right\} _{1}^{\infty}$
+\end_inset
+
+ מונוטונית ויורדת לאפס
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הסדרה 
+\begin_inset Formula $\left\{ a_{n}\right\} _{1}^{\infty}$
+\end_inset
+
+ מונוטונית וחסומה
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Description
-\align left
-\begin_inset Formula $\left[\cos\left(\alpha+\beta\right)-\cos\left(\alpha-\beta\right)=-2\sin\alpha\sin\beta\right]\Rightarrow\sin\alpha\sin\beta=\frac{1}{2}\left(\cos\left(\alpha-\beta\right)-\cos\left(\alpha+\beta\right)\right)$
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\sum\frac{\sin\left(n\alpha\right)}{n}\Rightarrow a_{n}=\frac{1}{n},\, b_{n}=\sin\left(n\alpha\right)\,\Rightarrow\sum\sin\left(n\alpha\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang hebrew
+ע"פ דיריכלה הטור חסום
+\lang english
+ 
+\begin_inset Formula $\left(\left|S_{n}\right|\leq\frac{1}{\sin\frac{\alpha}{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\sum_{2}^{\infty}\frac{\cos\left(n\alpha\right)\cos\frac{\pi}{n}}{\ln\left(\ln n\right)}=\underbrace{\sum\frac{\cos\left(n\alpha\right)}{\ln\ln n}}_{(1)}\cd\underbrace{\cos\frac{\pi}{n}}_{(2)}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang hebrew
+)
+\numeric on
+1
+\numeric off
+( מתכנסת ע"פ דיריכלה, )
+\numeric on
+2
+\numeric off
+( מונוטונית וחסומה.
+ לכן: הביטוי כולו מתכנס ע"פ משפט אבל.
+\end_layout
+
+\begin_layout Section
+אי-שיוויונים חשובים
+\end_layout
+
+\begin_layout Enumerate
+אי שיוויון המשולש: 
+\begin_inset Formula \[
+\forall_{x,y\in\mathbb{R}}\,\left|\left|x\right|-\left|y\right|\right|\leq\left|x+y\right|\leq\left|x\right|+\left|y\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אי-שיוויון ברנולי: 
+\begin_inset Formula \[
+\forall_{n\in\mathbb{N}},\,\forall_{x>-1}\left(1+x\right)^{n}\geq1+nx\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אי-שיוויון הממוצעים: 
+\begin_inset Formula \[
+n=2:\quad\frac{a+b}{2}\geq\sqrt{ab}\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\forall_{n\in\mathbb{N}}:\quad\frac{x_{1}+x_{2}+\ldots+x_{n}}{n}\geq\sqrt[n]{x_{1}\cd x_{2}\cd\ldots\cd x_{n}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אי-שיוויון של סופ"ש: 
+\begin_inset Formula \[
+\forall_{a>0}\, a+\frac{1}{a}\geq2\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Description
-\align left
-\begin_inset Formula $\left(\#\right)\Rightarrow\frac{1}{2}\left[\left(\cos\frac{\alpha}{2}-\cos\frac{3\alpha}{2}\right)+\left(\cos\frac{3\alpha}{2}-\cos\frac{5\alpha}{2}\right)+\ldots\right]\,\textnormal{a telescopic series}$
+דוגמא
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{1}^{\infty}\frac{\cos\left(nx\right)}{n+\left(-1\right)^{n+1}} & = & \sum\cos\left(nx\right)\left[\frac{1}{n}+\left(\frac{1}{n+\left(-1\right)^{n+1}}-\frac{1}{n}\right)\right]=\\
+ & = & \sum\cos\left(nx\right)\left[\frac{1}{n}+\left(\frac{\cancel{n}-\cancel{n}-\left(-1\right)^{n+1}}{n\cd\left(n+\left(-1\right)^{n+1}\right)}\right)\right]\\
+ & = & \sum\cos\left(nx\right)\left[\frac{\left(-1\right)^{n}}{n\cd\left(n+\left(-1\right)^{n+1}\right)}\right]=\\
+ & = & \underbrace{\sum\frac{\cos\left(nx\right)}{n}}_{(1)}+\underbrace{\sum\frac{\cos\left(nx\right)\cd\left(-1\right)^{n}}{n\cd\left(n+\left(-1\right)^{n+1}\right)}}_{(2)}\left(\natural\right)\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Description
-\align left
-\begin_inset Formula $\left(\#\right)=\frac{}{}$
+\begin_layout Standard
+)
+\numeric on
+1
+\numeric off
+( מתכנס ע"פ דיריכלה
+\begin_inset Newline newline
+\end_inset
+
+)
+\numeric on
+2
+\numeric off
+(: 
+\begin_inset Formula $\left|\frac{\cos\left(nx\right)\cd\left(-1\right)^{n}}{n^{2}+\left(-1\right)^{n+1}\cd n}\right|\leq\frac{\overbrace{1}^{a_{n}}}{n^{2}+\left(-1\right)^{n+1}\cd n}\thickapprox\frac{1}{n^{2}}$
+\end_inset
+
+ הטור 
+\begin_inset Formula $\sum\frac{1}{n^{2}}$
+\end_inset
+
+ מתכנס, ומכאן נובע כי 
+\begin_inset Formula $\left(\natural\right)$
+\end_inset
+
+ מתכנס ע"פ דיריכלה.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+תכונות יסודיות של טורים ומשפט רימן
+\end_layout
+
+\begin_layout Enumerate
+אם טור 
+\bar under
+חיובי
+\bar default
+ מתכנס, אז יתכנס לאותו סכום 
+\series bold
+\bar under
+כל
+\series default
+\bar default
+ טור שיתקבל ממנו ע"י הכנסת סוגריים ושינוי הסדר של איבריו.
+\end_layout
+
+\begin_layout Enumerate
+אם טור 
+\bar under
+כללי
+\bar default
+ מתכנס בהחלט, אזי 
+\series bold
+\bar under
+כל
+\series default
+\bar default
+ טור שמתקבל ממנו ע"י שינוי סדר של איבריו יתכנס לאותו סכום.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+משפט רימן
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+יהי 
+\begin_inset Formula $\sum_{1}^{\infty}a_{n}$
+\end_inset
+
+ טור המתכנס בתנאי, אזי לכל סכום 
+\begin_inset Formula $S$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $-\infty\leq S\leq+\infty$
+\end_inset
+
+ אפשר לסדר את איברי הטור באופן כזה שהטור החדש יתכנס ל 
+\begin_inset Formula $S$
+\end_inset
+
+ )או לא יתכנס כלל, אפילו במובן הרחב!(.
+ )!!(
+\begin_inset Newline newline
+\end_inset
+
+דוגמאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נתון: 
+\begin_inset Formula $\sum_{1}^{\infty}\frac{1}{n^{4}}=1-\frac{1}{2^{4}}+\dots=\frac{\pi^{4}}{90}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מצא: 
+\begin_inset Formula $P=\sum_{1}^{\infty}\frac{1}{\left(2n-1\right)^{4}},\, Q=\sum_{1}^{\infty}\frac{\left(-1\right)^{n-1}}{n^{4}}$
+\end_inset
+
+ )מה ערכי 
+\begin_inset Formula $P$
+\end_inset
+
+ ו 
+\begin_inset Formula $Q$
+\end_inset
+
+?(
+\begin_inset Newline newline
+\end_inset
+
+משום ש 
+\begin_inset Formula $\sum\frac{1}{n^{4}}$
+\end_inset
+
+ מתכנס, ניתן לשנות את סדר האיברים כך: 
+\begin_inset Formula \begin{eqnarray*}
+\sum\frac{1}{n^{4}} & = & \underbrace{\left[1+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\ldots+\frac{1}{\left(2n-1\right)^{4}}+\ldots\right]}_{P}+\left[\frac{1}{2^{4}}+\frac{1}{4^{4}}+\ldots+\frac{1}{\left(2n\right)^{4}}\right]=\\
+ & = & \underbrace{\left[1+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\ldots+\frac{1}{\left(2n-1\right)^{4}}+\ldots\right]}+\frac{1}{2^{4}}\left[1+\frac{1}{2^{4}}+\frac{1}{3^{4}}+\ldots+\frac{1}{n^{4}}\right]=\\
+\frac{\pi^{4}}{90} & = & P+\frac{1}{16}\cd\frac{\pi^{4}}{90}\Longrightarrow\,\, P=\frac{15}{16}\cd\frac{\pi^{4}}{90}\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+הטור 
+\begin_inset Formula $Q$
+\end_inset
+
+ מתכנס בהחלט ע"פ משפט לייבניץ: 
+\begin_inset Formula \begin{eqnarray*}
+Q & = & 1-\frac{1}{2^{4}}+\frac{1}{3^{4}}-\frac{1}{4^{4}}+\ldots\pm\frac{1}{n^{4}}=\\
+ & = & \underbrace{\left[1+\frac{1}{3^{4}}+\frac{1}{5^{4}}+\ldots+\frac{1}{\left(2n-1\right)^{4}}+\ldots\right]}_{P}-\underbrace{\left[\frac{1}{2^{4}}+\frac{1}{4^{4}}+\ldots+\frac{1}{\left(2n\right)^{4}}\right]}_{(1)}\Rightarrow(1)=\frac{1}{16}\cd\frac{\pi^{4}}{90}\Rightarrow\\
+ & = & \frac{15}{16}\cd\frac{\pi^{4}}{90}-\frac{1}{16}\cd\frac{\pi^{4}}{90}=\frac{14}{16}\cd\frac{\pi^{4}}{90}=\frac{7}{8}\cd\frac{\pi^{4}}{90}\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+נתון: 
+\begin_inset Formula $B=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\ldots+\left(-1\right)^{n+1}\cd\frac{1}{n}=\ln2$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+חשב את 
+\begin_inset Formula $A=1-B=1-\frac{1}{2}-\frac{1}{4}+\frac{1}{3}-\frac{1}{6}-\frac{1}{8}+\frac{1}{5}-\frac{1}{10}-\frac{1}{12}+\ldots$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+S_{3} & = & 1-\frac{1}{2}-\frac{1}{4}=\frac{1}{4}\\
+S_{3m} & = & \left(1-\frac{1}{2}-\frac{1}{4}\right)+\left(\frac{1}{3}-\frac{1}{6}-\frac{1}{8}\right)+\left(\frac{1}{5}-\frac{1}{10}-\frac{1}{12}\right)+\ldots=\\
+ & = & \sum_{1}^{\infty}\left(\frac{1}{2m-1}-\frac{1}{4m-2}-\frac{1}{4m}\right)=\sum_{1}^{\infty}\left(\frac{1}{4m-2}-\frac{1}{4m}\right)=\\
+ & = & \frac{1}{2}-\frac{1}{4}+\frac{1}{6}+\frac{1}{8}+\ldots+\left(\frac{1}{4m-2}-\frac{1}{4m}\right)=\\
+ & = & \frac{1}{2}\cd\left[1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\ldots+\frac{1}{2m-1}-\frac{1}{2m}\right]=\frac{1}{2}\cd\left[\ln2\right]\Rightarrow A=\frac{\ln2}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
