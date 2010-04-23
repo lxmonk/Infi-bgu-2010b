@@ -265,6 +265,18 @@ a+aq+aq^{2}+aq^{3}+\ldots=\frac{a}{1-q}\quad\left|q\right|<1\]
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}-y^{2} & = & \left(x-y\right)\left(x+y\right)\\
+x^{3}-y^{3} & = & \left(x-y\right)\left(x^{2}+xy+y^{2}\right)\\
+x^{4}-y^{4} & = & \left(x^{2}+y^{2}\right)\left(x^{2}-y^{2}\right)=\left(x-y\right)\left(x^{3}+x^{2}y+xy^{2}+y^{3}\right)\\
+x^{n}-y^{n} & = & \left(x-y\right)\left(x^{n-1}+x^{n-2}y+x^{n-3}y^{2}+\ldots+y^{n-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 סדרות
 \end_layout
@@ -4332,6 +4344,600 @@ S_{3m} & = & \left(1-\frac{1}{2}-\frac{1}{4}\right)+\left(\frac{1}{3}-\frac{1}{6
 
 \end_layout
 
+\begin_layout Part
+פונקציות
+\end_layout
+
 \end_deeper
+\begin_layout Chapter
+תכונות של פונקציות
+\end_layout
+
+\begin_layout Section
+זוגיות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ זוגית 
+\begin_inset Formula $\forall x\in D:\quad f\left(-x\right)=f\left(x\right)\qquad\Longleftrightarrow\qquad$
+\end_inset
+
+.
+ פונ' אלו סימטריות ביחס לציר ה-
+\begin_inset Formula $x$
+\end_inset
+
+.
+ למשל: 
+\begin_inset Formula $x^{2},x^{4},\ldots,x^{2n},\cos x,\left|x\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אי-זוגית 
+\begin_inset Formula $\forall x\in D:\quad f\left(-x\right)=-f\left(x\right)\qquad\Longleftrightarrow\qquad$
+\end_inset
+
+.
+ פונ' אלו סימטריות ביחס לראשית הצירים.
+ למשל: 
+\begin_inset Formula $x^{3},x^{2n-1},\sin x,\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אינה זוגית ואינה אי-זוגית היא תקרא 
+\series bold
+\bar under
+פונקציה כללית.
+\end_layout
+
+\begin_layout Section
+מונוטוניות
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פונ' המוגדרת בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ מונוטונית עולה )יורדת( בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ אם 
+\begin_inset Formula \begin{eqnarray*}
+\forall x_{1},x_{2} & \in & D:\, x_{1}<x_{2}\Rightarrow f\left(x_{1}\right)\leq f\left(x_{2}\right)\,\\
+ &  & \left(f\left(x_{1}\right)\geq f\left(x_{2}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+דוגמא: 
+\begin_inset Formula $f\left(x\right)=x^{3},\, x\in\mathbb{R}$
+\end_inset
+
+.
+ האם הפונ' מונוטונית?
+\begin_inset Newline newline
+\end_inset
+
+נבחר 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+.
+ ונבדוק:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+f\left(x_{2}\right)-f\left(x_{1}\right) & = & x_{2}^{3}-x_{1}^{2}=\left(x_{2}-x_{1}\right)\left(x_{2}^{2}+x_{2}x_{1}+x_{1}^{2}\right)=\left(x_{2}-x_{1}\right)\cd x_{1}^{2}\cd\left(\frac{x_{2}^{2}}{x_{1}^{2}}+\frac{x_{2}}{x_{1}}+1\right)\\
+\left[\frac{x_{2}}{x_{1}}=t\right]\Rightarrow &  & \underbrace{\left(x_{2}-x_{1}\right)}_{>0}\cd\underbrace{x_{1}^{2}}_{>0}\cd\underbrace{\left(t^{2}+t+1\right)}_{>0}\Rightarrow x_{2}^{3}>x_{1}^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+הנחנו בה"כ כי 
+\begin_inset Formula $x_{1}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+מחזוריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T>0,\: T\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\forall x\in D\quad f\left(x+T\right)=f\left(x\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $T$
+\end_inset
+
+ יקרא המחזור של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename sin-cos.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin x\,\cos x:\, T=2\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename MSP5919a93e724fhbbbg900004h9cf2c2c1589ca1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tan x:\, T=\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה אם 
+\begin_inset Formula $f\left(x\right),g\left(x\right)$
+\end_inset
+
+ מוגדרות על 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, ומחזוריות עם מחזורים 
+\begin_inset Formula $S,T$
+\end_inset
+
+ בהתאמה ו - 
+\begin_inset Formula $\frac{S}{T}\in\mathbb{Q}$
+\end_inset
+
+ אזי הפונקציות 
+\begin_inset Formula $f\left(x\right)\pm g\left(x\right),\, f\left(x\right)\cd g\left(x\right),\,\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ מחזוריות אף הן.
+\end_layout
+
+\begin_layout Description
+הוכחה
+\begin_inset space ~
+\end_inset
+
+)עבור
+\begin_inset space ~
+\end_inset
+
+מקרה
+\begin_inset space ~
+\end_inset
+
+אחד(
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $h\left(x\right)=f\left(x\right)+g\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{S}{T}=\underbrace{\frac{m}{n}}_{*},\, m,n\in\mathbb{Z}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+* מצומצם
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Sn=Tm=U$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $h\left(x+U\right)=f\left(x+U\right)+g\left(x+u\right)=f\left(x+Sn\right)+g\left(x+Tm\right)=f\left(x\right)+g\left(x\right)=h\left(x\right)$
+\end_inset
+
+ מש"ל.
+ שאר ההוכחות בדומה.
+\end_layout
+
+\begin_layout Description
+דוגמא
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+פונקציית
+\begin_inset space ~
+\end_inset
+
+דיריכלה
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $D\left(x\right)=\begin{cases}
+1 & x\in\mathbb{Q}\\
+0 & x\not\in\mathbb{Q}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+המחזור 
+\begin_inset Formula $T$
+\end_inset
+
+ הוא כל מספר רציונלי.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+הרכבה של פונקציות )פונקציות מרוכבות(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right):\, B\rightarrow C,\quad g\left(x\right):\, A\rightarrow B$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f\circ g\left(x\right):\, A\rightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הפיכות )פונקציה הפוכה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ היא חח"ע ועל אם"ם 
+\begin_inset Formula $f$
+\end_inset
+
+ הפיכה )כלומר: קיימת 
+\begin_inset Formula $f^{-1}:B\rightarrow A$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+כלומר: 
+\begin_inset Formula \begin{eqnarray*}
+f^{-1}\left(f\left(x\right)\right)=x & : & A\rightarrow A\\
+f\left(f^{-1}\left(x\right)\right)=x & : & B\rightarrow B\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+דוגמאות
+\series default
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y=x^{3}:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נזכור כי פונ' מונוטוניות ממש הן הפיכות.
+\begin_inset Newline newline
+\end_inset
+
+להפיכות נדרש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הפונ' על )
+\begin_inset Formula $Im\left(f\right)=\mathbb{R}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+הפונ' חח"ע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f & : & \left\{ \left\langle x,y\right\rangle \right\} \\
+ &  & \searrow\swarrow\\
+f & : & \left\{ \left\langle y,x\right\rangle \right\} \end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+y & = & x^{3}:\mathbb{R}\rightarrow\mathbb{R}\\
+x & = & y^{3}:\mathbb{R}\rightarrow\mathbb{R}\Rightarrow\\
+y & = & \sqrt[3]{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename x^3-x-third.png
+	width 90text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{3},\,\sqrt[3]{x},\, y=x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \sin x:\cancel{\mathbb{R}}\rightarrow\cancel{\mathbb{R}}\Rightarrow\\
+ &  & \sin x:\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\rightarrow\left[-1,1\right]\Rightarrow\\
+\\y & = & \sin x:\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\rightarrow\left[-1,1\right]\Rightarrow\\
+x & = & \sin y:\left[-1,1\right]\rightarrow\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\Rightarrow\\
+\sin^{-1}\left(x\right) & = & \sin^{-1}\left(\sin y\right)\Rightarrow\\
+y & = & \sin^{-1}\left(x\right)=\arcsin x\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename sin-asin.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin x,\,\arcsin x,\, x=y,\,\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(\arcsin x\right)=x & : & x\in\left[-1,1\right]\\
+\arcsin\left(\sin x\right)=x & : & x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right)=\tan\left(x\right) & : & \left(-\frac{\pi}{2},\frac{\pi}{2}\right)\rightarrow\mathbb{R}\\
+y=\tan\left(x\right) & : & \left(-\frac{\pi}{2},\frac{\pi}{2}\right)\rightarrow\mathbb{R}\\
+x=\tan\left(y\right) & : & \mathbb{R}\rightarrow\left(-\frac{\pi}{2},\frac{\pi}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename tan-atan.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tan x,\,\arctan x,\, x=y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
