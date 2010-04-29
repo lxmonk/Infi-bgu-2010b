@@ -4985,8 +4985,8 @@ status collapsed
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 
- פונ', המוגדרת ב סביבה של 
-\begin_inset Formula $\left(\overset{\circ}{U}\left(a\right)\right)\quad a$
+ פונ', המוגדרת בסביבה של 
+\begin_inset Formula $\left(\overset{\circ}{U}\left(a\right)\right)\,\, a$
 \end_inset
 
 .
@@ -4995,7 +4995,7 @@ status collapsed
 \end_inset
 
  )למשל: 
-\begin_inset Formula $a+\frac{1}{e^{n}},a+\frac{1}{n},a\cd\sqrt[n]{n}$
+\begin_inset Formula $a+\frac{1}{e^{n}},\, a+\frac{1}{n},\, a\cd\sqrt[n]{n}$
 \end_inset
 
 ( בפונ'.
@@ -5037,6 +5037,10 @@ f\left(x\right) & = & x\cd\sin\frac{1}{x}\\
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \lang hebrew
 הגבול תלוי בסדרה השואפת לאפס )בכיוון השאיפה
 \family roman
@@ -5064,9 +5068,19 @@ f\left(x\right) & = & x\cd\sin\frac{1}{x}\\
 
 
 \begin_inset Formula \begin{eqnarray*}
-x_{n}^{1} & = & \frac{1}{n}\rightarrow^{+}0\Rightarrow\mathsf{sign}\left(x\right)=1\rightarrow1\\
-x_{n}^{2} & =- & \frac{1}{n}\rightarrow^{-}0\Rightarrow\mathsf{sign}\left(x\right)=-1\rightarrow-1\end{eqnarray*}
+x_{n}^{1} & =\frac{1}{n} & \rightarrow^{+}0\Rightarrow\mathsf{sign}\left(x\right)=1\rightarrow1\\
+x_{n}^{2} & =-\frac{1}{n} & \rightarrow^{-}0\Rightarrow\mathsf{sign}\left(x\right)=-1\rightarrow-1\end{eqnarray*}
 
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang hebrew
+ולכן, לפונקציה זו אין גבול בנק' 
+\begin_inset Formula $x=0$
 \end_inset
 
 
@@ -5132,7 +5146,7 @@ Heine
 \end_inset
 
 , אם 
-\begin_inset Formula $\forall x_{n}\rightarrow a\,\left(a\neq a\right)\quad f\left(x_{n}\right)\rightarrow L$
+\begin_inset Formula $\forall x_{n}\rightarrow a\,\left(x_{n}\neq a\right)\quad f\left(x_{n}\right)\rightarrow L$
 \end_inset
 
 .
@@ -5163,11 +5177,19 @@ x_{n}\rightarrow2 & \Rightarrow & f\left(x_{n}\right)=\frac{\cancel{\left(x_{n}-
 \end_inset
 
 : 
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Formula $\lim_{x\rightarrow0}\left(x+\frac{1}{x}\right)$
 \end_inset
 
 .
- נפריך ע"י דוגמא - נבחר שתי סדרות ונראה כי הגבולות המתקבלים שונים:
+ 
+\begin_inset Newline newline
+\end_inset
+
+נפריך ע"י דוגמא - נבחר שתי סדרות ונראה כי הגבולות המתקבלים שונים:
 \begin_inset Newline newline
 \end_inset
 
@@ -5175,7 +5197,7 @@ x_{n}\rightarrow2 & \Rightarrow & f\left(x_{n}\right)=\frac{\cancel{\left(x_{n}-
 \begin_inset Formula \begin{eqnarray*}
 x_{n}^{1} & = & \lim_{n\rightarrow\infty}\frac{1}{n}\rightarrow^{+}0\Rightarrow f\left(x_{n}^{1}\right)_{n\rightarrow\infty}=\frac{1}{n}+n=0+\infty\rightarrow^{+}\infty\\
 x_{n}^{2} & = & \lim_{n\rightarrow\infty}-\frac{1}{n}\rightarrow^{-}0\Rightarrow f\left(x_{n}^{2}\right)_{n\rightarrow\infty}=-\frac{1}{n}-n=0-\infty\rightarrow^{-}\infty\\
-^{-}\infty\neq^{+}\infty & \Rightarrow & L\,\textnormal{does not exist}\end{eqnarray*}
+\\ &  & ^{-}\infty\neq^{+}\infty\Rightarrow L\,\textnormal{does not exist}\end{eqnarray*}
 
 \end_inset
 
@@ -5206,7 +5228,333 @@ x_{n}^{2} & = & \lim_{n\rightarrow\infty}-\frac{1}{n}\rightarrow^{-}0\Rightarrow
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+נבחר 
+\begin_inset Formula $x_{n}^{1}=\frac{1}{\pi n}\Rightarrow f\left(x_{n}\right)=0$
+\end_inset
+
+, אך כשנבחר 
+\begin_inset Formula $x_{n}^{2}=\frac{1}{\frac{\pi}{2}+\pi n}\Rightarrow f\left(x_{n}\right)=1$
+\end_inset
+
+
 \end_layout
 
+\begin_layout Section
+משפטים בסיסיים - מסדרות לפונקציות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lim_{x\rightarrow a}f\left(x\right)=A,\,\lim_{x\rightarrow a}g\left(x\right)=B$
+\end_inset
+
+, אזי:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow a}\left(f\left(x\right)\pm g\left(x\right)\right)=A\pm B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow a}\left(f\left(x\right)\cd g\left(x\right)\right)=A\cd B$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow a}\left(C\cd f\left(x\right)\right)=C\cd f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow a}\frac{f\left(x\right)}{g\left(x\right)}=\frac{A}{B},\textnormal{ as long as }B\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow a}\underbrace{f\left(x\right)}_{\rightarrow0}\cd\underbrace{g\left(x\right)}_{\textnormal{blocked}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\forall x\, g\left(x\right)\leq f\left(x\right)\leq h\left(x\right),\, g\left(x\right),h\left(x\right)\rightarrow L\Rightarrow f\left(x\right)\rightarrow L$
+\end_inset
+
+
+\lang hebrew
+לפי משפט הסנדוויץ' 
+\end_layout
+
+\begin_layout Section
+גבולות חד-צדדיים
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ יקרא 
+\bar under
+גבול חד-צדדי
+\bar default
+ ימני של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $\forall x_{n}\rightarrow a\,\left(x_{n}>a\right)\quad f\left(x_{n}\right)\rightarrow L_{1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ יקרא 
+\bar under
+גבול חד-צדדי
+\bar default
+ שמאלי של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $\forall x_{n}\rightarrow a\,\left(x_{n}<a\right)\quad f\left(x_{n}\right)\rightarrow L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{1}\neq L_{2}$
+\end_inset
+
+ אז אין לפונ' גבול בנק' 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L_{1}=L_{2}$
+\end_inset
+
+ אז קיים גבול והוא שווה להם: 
+\begin_inset Formula $L=L_{1}=L_{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Updownarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם קיים גבול 
+\begin_inset Formula $L$
+\end_inset
+
+, אז 
+\begin_inset Formula $L=L_{1}=L_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+גבולות בסיסיים
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow\infty}\frac{1}{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow\infty}\frac{c}{x^{k}}=c\cd\underbrace{\lim\frac{1}{x}\cd\dots\cd\lim\frac{1}{x}}_{\textnormal{k times}}=0,\quad k\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow\infty}\frac{a_{1}x^{n}+a_{2}x^{n-1}\dots}{b_{1}x^{m}+b_{2}x^{m-1}\dots}|:x^{m}=\begin{cases}
+\frac{a_{1}}{b_{1}} & m=m\\
+0 & n<m\\
+\pm\infty & n>m\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\left|x\right|<1\Rightarrow\lim_{x\rightarrow^{+}\infty}a^{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גבולות מופלאים
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula \[
+\left[a_{n}=\left(1+\frac{1}{n}\right)^{n}=e\right]\Rightarrow\lim_{x\rightarrow\infty}\left(1+\frac{1}{x}\right)^{x}=e\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula \[
+\lim_{x\rightarrow0}\frac{\sin x}{x}=1\qquad\left(!!!!\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow0}x\sin\frac{1}{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow0}\sin\frac{1}{x}\sin x=\frac{\sin x}{x}=1\,(*)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow\infty}x\sin\frac{1}{x}=\lim_{x\rightarrow\infty}\left(\frac{\sin\frac{1}{x}}{\frac{1}{x}}\right)=1\,\left(*\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\lim_{x\rightarrow\infty}\frac{1}{x}\sin x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\lang english
+(*) -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang hebrew
+על פי הגבול המופלא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
