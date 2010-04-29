@@ -138,7 +138,7 @@ status collapsed
 \color none
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2532,7 +2532,7 @@ name "cor2:דוגמא-לא-מלאה:"
 \begin_layout Subsection
 מבחן קושי לטורים חיוביים )מבחן השורש של קושי( 
 \begin_inset OptArg
-status open
+status collapsed
 
 \begin_layout Plain Layout
 מבחן קושי לטורים חיוביים
@@ -2963,7 +2963,7 @@ G.
 \lang hebrew
  
 \begin_inset OptArg
-status open
+status collapsed
 
 \begin_layout Plain Layout
 טורי לייבניץ
@@ -3287,7 +3287,7 @@ status open
 \lang hebrew
  
 \begin_inset OptArg
-status open
+status collapsed
 
 \begin_layout Plain Layout
 טרנספורמציית אבל
@@ -3447,7 +3447,7 @@ S & = & \sum_{i=1}^{m}\alpha_{i}\beta_{i}=\sum\alpha_{i}\left(\overbrace{B_{i}-B
 
  
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space ~
@@ -4802,11 +4802,48 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename x^3-x-third.png
-	width 90text%
+	width 50text%
 
 \end_inset
 
 
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{3},\,\sqrt[3]{x},\, y=x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename sage-x^3.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -4847,7 +4884,7 @@ y & = & \sin^{-1}\left(x\right)=\arcsin x\end{eqnarray*}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4907,7 +4944,7 @@ x=\tan\left(y\right) & : & \mathbb{R}\rightarrow\left(-\frac{\pi}{2},\frac{\pi}{
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4933,6 +4970,238 @@ status open
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+גבול של פונקציה
+\end_layout
+
+\begin_layout Description
+הגדרה תהי 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פונ', המוגדרת ב סביבה של 
+\begin_inset Formula $\left(\overset{\circ}{U}\left(a\right)\right)\quad a$
+\end_inset
+
+.
+ נציב סדרה השואפת ל
+\begin_inset Formula $a$
+\end_inset
+
+ )למשל: 
+\begin_inset Formula $a+\frac{1}{e^{n}},a+\frac{1}{n},a\cd\sqrt[n]{n}$
+\end_inset
+
+( בפונ'.
+ ידוע כי 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}\rightarrow a$
+\end_inset
+
+.
+ האם ניתן לומר משהו על 
+\begin_inset Formula $\left\{ f\left(a_{n}\right)\right\} _{n\rightarrow\infty}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Description
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x\cd\sin\frac{1}{x}\\
+\forall x_{n}\rightarrow0 & f\left(x_{n}\right)=\underbrace{x_{n}}_{\rightarrow0}\cd\underbrace{\sin\frac{1}{x_{n}}}_{\textnormal{blocked}} & \rightarrow0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=sign\left(x\right)=\begin{cases}
+1 & x>0\\
+0 & x=0\\
+-1 & x<0\end{cases}$
+\end_inset
+
+
+\lang hebrew
+הגבול תלוי בסדרה השואפת לאפס )בכיוון השאיפה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- חיובי או שלילי(
+\lang english
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+x_{n}^{1} & = & \frac{1}{n}\rightarrow^{+}0\Rightarrow\mathsf{sign}\left(x\right)=1\rightarrow1\\
+x_{n}^{2} & =- & \frac{1}{n}\rightarrow^{-}0\Rightarrow\mathsf{sign}\left(x\right)=-1\rightarrow-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הגדרת הגבול לפי
+\family sans
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Heine
+\family sans
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- בשפת הסדרות
+\end_layout
+
+\begin_layout Standard
+מספר ממשי 
+\begin_inset Formula $L$
+\end_inset
+
+ יקרא גבול של פונ' 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ שואף ל 
+\begin_inset Formula $a$
+\end_inset
+
+, אם 
+\begin_inset Formula $\forall x_{n}\rightarrow a\,\left(a\neq a\right)\quad f\left(x_{n}\right)\rightarrow L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמאות:
+\end_layout
+
+\begin_layout Enumerate
+לפונ' הבאה קיים גבול ללא קשר לסדרה: 
+\begin_inset Formula \begin{eqnarray*}
+\lim_{x\rightarrow2}\frac{x^{2}-4}{x-2} & =\\
+x_{n}\rightarrow2 & \Rightarrow & f\left(x_{n}\right)=\frac{\cancel{\left(x_{n}-2\right)}\left(x_{n}+2\right)}{\cancelto{1}{\left(x_{n}-2\right)}}=\left(x_{n}+2\right)=4\end{eqnarray*}
+
+\end_inset
+
+ משום שהגבול אינו תלוי בסדרה שתוצב אל הפונ' - הגבול 
+\begin_inset Formula $L$
+\end_inset
+
+ קיים.
+\end_layout
+
+\begin_layout Enumerate
+לפונ' הבאה אין גבול כאשר 
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+: 
+\begin_inset Formula $\lim_{x\rightarrow0}\left(x+\frac{1}{x}\right)$
+\end_inset
+
+.
+ נפריך ע"י דוגמא - נבחר שתי סדרות ונראה כי הגבולות המתקבלים שונים:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+x_{n}^{1} & = & \lim_{n\rightarrow\infty}\frac{1}{n}\rightarrow^{+}0\Rightarrow f\left(x_{n}^{1}\right)_{n\rightarrow\infty}=\frac{1}{n}+n=0+\infty\rightarrow^{+}\infty\\
+x_{n}^{2} & = & \lim_{n\rightarrow\infty}-\frac{1}{n}\rightarrow^{-}0\Rightarrow f\left(x_{n}^{2}\right)_{n\rightarrow\infty}=-\frac{1}{n}-n=0-\infty\rightarrow^{-}\infty\\
+^{-}\infty\neq^{+}\infty & \Rightarrow & L\,\textnormal{does not exist}\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\bar under
+בכדי להראות שיש גבול - יש להראות שהוא אינו קשור בסדרה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+\lim_{x\rightarrow0}\sin\left(\frac{1}{x}\right)\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename sinx^-1
 
 \end_inset
 
