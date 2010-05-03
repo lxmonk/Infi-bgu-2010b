@@ -258,7 +258,9 @@ a+aq+aq^{2}+aq^{3}+\ldots=\frac{a}{1-q}\quad\left|q\right|<1\]
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 \sin\left(\alpha+\beta\right) & = & \sin\alpha\cd\cos\beta+\sin\beta\cd\cos\alpha\\
-\cos\left(\alpha+\beta\right) & = & \cos\alpha\cd\cos\beta+\sin\alpha\cd\sin\beta\end{eqnarray*}
+\cos\left(\alpha+\beta\right) & = & \cos\alpha\cd\cos\beta+\sin\alpha\cd\sin\beta\\
+1-\cos2x & = & 2\sin^{2}x\\
+1+\cos2x & = & 2\cos^{2}x\end{eqnarray*}
 
 \end_inset
 
@@ -5223,7 +5225,8 @@ x_{n}^{2} & = & \lim_{n\rightarrow\infty}-\frac{1}{n}\rightarrow^{-}0\Rightarrow
 
 
 \begin_inset Graphics
-	filename sinx^-1
+	filename sinx^-1.png
+	scale 75
 
 \end_inset
 
@@ -5237,6 +5240,17 @@ x_{n}^{2} & = & \lim_{n\rightarrow\infty}-\frac{1}{n}\rightarrow^{-}0\Rightarrow
 
 , אך כשנבחר 
 \begin_inset Formula $x_{n}^{2}=\frac{1}{\frac{\pi}{2}+\pi n}\Rightarrow f\left(x_{n}\right)=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename sage-sin-2.png
+	scale 75
+
 \end_inset
 
 
@@ -5553,6 +5567,350 @@ x_{n}^{2} & = & \lim_{n\rightarrow\infty}-\frac{1}{n}\rightarrow^{-}0\Rightarrow
 \noun default
 \color inherit
 2
+\end_layout
+
+\end_deeper
+\begin_layout Section
+הגדרת הגבול לפי קושי )בשפת 
+\begin_inset Formula $\delta,\,\varepsilon$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L=\lim_{x\rightarrow a}f\left(x\right)\Leftrightarrow\forall\varepsilon>0\,\exists\delta\left(\varepsilon\right):\left|x-a\right|<\delta,\,\left|f\left(x\right)-L\right|<\varepsilon\]
+
+\end_inset
+
+ כלומר: 
+\begin_inset Formula $L$
+\end_inset
+
+ יקרא גבול של הפונ' בנקודה 
+\begin_inset Formula $x=a$
+\end_inset
+
+ אם"ם לכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ חיובי קיים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ כך שככל שהפונ' מופעלת על איבר הקרוב ל
+\begin_inset Formula $a$
+\end_inset
+
+ ערך הפונ' מתקרב ל
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+משפט הגדרות הגבול לפי קושי ולפי היינה שקולות.
+ )ניתנה הוכחה בשיעור(
+\end_layout
+
+\begin_layout Chapter
+רציפות של פונקציות
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $x=a$
+\end_inset
+
+ אם היא מוגדרת ב 
+\begin_inset Formula $\overset{\circ}{U}\left(a\right)$
+\end_inset
+
+ וקיים הגבול 
+\series bold
+\bar under
+הסופי
+\series default
+\bar default
+ 
+\begin_inset Formula $\lim_{x\rightarrow a}f\left(x\right)=f\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+דוגמאות
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+\frac{x^{2}-4}{x-2} & x\neq2\\
+A & x=2\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang hebrew
+הפונקציה רציפה כאשר 
+\begin_inset Formula $A=4$
+\end_inset
+
+ ולא רציפה בכל מקרה אחר.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+סוגי אי רציפות
+\end_layout
+
+\begin_layout Subsection
+אי-רציפות סליקה
+\end_layout
+
+\begin_layout Description
+הגדרה נק' 
+\begin_inset Formula $a$
+\end_inset
+
+ תקרא נק' אי-רציפות סליקה )ניתן לסלקה( אם קיים הגבול 
+\begin_inset Formula $\lim_{x\rightarrow a}f\left(x\right)=L$
+\end_inset
+
+ אבל 
+\begin_inset Formula $f\left(a\right)\neq L$
+\end_inset
+
+ או 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ לא מוגדר.
+\end_layout
+
+\begin_layout Description
+דוגמאות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\mathrm{sign}\left(\frac{1}{x^{2}}\right)$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename sgnx^-2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)=\frac{\sin x}{x}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename sinc.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אי רציפות מסוג I )"קפיצה"(
+\end_layout
+
+\begin_layout Description
+הגדרה נק' 
+\begin_inset Formula $a$
+\end_inset
+
+ תקרא נק' אי-רציפות מסוג I אם:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists\lim_{x\rightarrow a^{+}}f\left(x\right)\neq\lim_{x\rightarrow a^{-}}f\left(x\right)$
+\end_inset
+
+.
+ למשל:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\left\lfloor x\right\rfloor $
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename /home/lxmonk/Documents/school/BA2/Infi/floor
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\mathrm{sign}x$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename sgn
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\mathrm{sign}\left(x^{2}-5x+6\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename sgn-pol
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אי רציפות מסוג II 
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה נק' 
+\begin_inset Formula $a$
+\end_inset
+
+ תקרא נק' אי-רציפות מסוג II אם לפחות אחד מהגבולות החד-צדדיים לא קיים )
+\numeric on
+1
+\numeric off
+( או שווה לאינסוף )
+\numeric on
+2
+\numeric off
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\sin\left(\frac{1}{x}\right),\,\cos\left(\frac{1}{x}\right):\,\lim_{x\rightarrow0}f\left(x\right)\textnormal{ does not exist}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename sinx^-1.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\frac{1}{\left(x-1\right)^{2}}:\,\lim_{x\rightarrow1^{+}}f\left(x\right)=\lim_{x\rightarrow1^{-}}f\left(x\right)=+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $f\left(x\right)=\frac{x}{\sin x}$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename x:sinx.png
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
